@@ -7,14 +7,14 @@ const { resolve } = createResolver(import.meta.url);
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  
+
   ssr: false,
 
   typescript: {
     shim: false,
   },
-  
-  
+
+
 
   // Vuetify build configuration
   build: {
@@ -25,7 +25,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Sudiova Nuxtjs Template",
+      title: "Architect Weldon - Portfolio",
     },
   },
 
