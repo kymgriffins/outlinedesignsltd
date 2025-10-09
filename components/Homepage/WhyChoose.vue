@@ -89,9 +89,9 @@ const users = [
                           <img :src="Profile" alt="icon" class="w-100" />
                         </v-avatar>
                         <div>
-                          <h5 class="text-subtitle-1">Wade Warren</h5>
+                          <h5 class="text-subtitle-1">Rowell Egesa</h5>
                           <p class="text-subtitle-2 text-secondary opacity-70">
-                            Bank of America
+                            Entrepreneur
                           </p>
                         </div>
                       </div>
@@ -111,7 +111,7 @@ const users = [
             <v-col cols="12" md="4" class="d-flex flex-column">
               <img :src="WhyImg" alt="icon" class="w-100" />
               <div class="mt-5 bg-secondary pa-7">
-                <h2 class="text-h2 text-white">500+</h2>
+                <h2 class="text-h2 text-white">27+</h2>
                 <small
                   class="text-white opacity-70 text-subtitle-2 font-weight-regular"
                   >Successful projects completed</small
@@ -138,7 +138,7 @@ const users = [
                 class="border border-sm  pa-7 position-relative overflow-hidden brand-served d-flex flex-column h-100 justify-space-between"
               >
                 <div class="pb-4">
-                  <h2 class="text-h2">238+</h2>
+                  <h2 class="text-h2">28+</h2>
                   <small
                     class="text-dark text-subtitle-1 font-weight-regular"
                     >Brands served worldwide</small

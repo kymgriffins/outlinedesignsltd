@@ -16,7 +16,7 @@ const blogImages = {
   colosseumTeaser1: "https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=800&q=60",
   stPetersTeaser1: "https://images.unsplash.com/photo-1513652859026-aae5be4d7443?auto=format&fit=crop&w=800&q=60",
   nairobiModel1: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=60",
-
+  nairobiAirlineview: "https://www.flightsfrom.com/routes/NBO-JFK.png",
   // Blog 2: American Icons
   usaTrip: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=60",
   fieldVisits: "https://images.unsplash.com/photo-1473187983305-f615310e7daa?auto=format&fit=crop&w=800&q=60",
@@ -30,7 +30,7 @@ const blogImages = {
   usCapitolFieldTrip1: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=60",
   nycSkyline1: "https://images.unsplash.com/photo-1504215680853-6c7a66f896e4?auto=format&fit=crop&w=800&q=60",
   dcMonuments1: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=60",
-
+  usamap: "https://www.cia.gov/the-world-factbook/static/maps/US-map.jpg",
   // Blog 3: Italy’s Timeless Lessons
   italyTrip: "https://images.unsplash.com/photo-1504394423664-3d6cd0a6e8db?auto=format&fit=crop&w=800&q=60",
   colosseumExterior1: "https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=800&q=60",
@@ -43,7 +43,7 @@ const blogImages = {
   milanGothicFacade1: "https://images.pexels.com/photos/258160/pexels-photo-258160.jpeg?auto=compress&cs=tinysrgb&w=800&fit=crop",
   romeTour1: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=60",
   milanSkyline1: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=800&q=60",
-
+  italyAirlineview: "https://www.flightsfrom.com/routes/FCO-JFK.png",
   // Blog 4: Germany’s Architectural Gems
   germanyTrip: "https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=800&q=60",
   neuschwansteinExterior1: "https://images.unsplash.com/photo-1504609813448-d1d9f71766e4?auto=format&fit=crop&w=800&q=60",
@@ -65,7 +65,7 @@ const chance = new Chance();
 const BlogGridData: BlogTypes[] = [
   {
     id: chance.integer({ min: 1, max: 2000 }),
-    blog_image: blogImages.kenyattaUni,
+    blog_image: blogImages.nairobiAirlineview,
     blog_title: "From Nairobi to Notre Dame: Launching My Architectural Odyssey",
     blog_date: "September 5, 2024",
     blog_inner_image: blogImages.ndCampus,
@@ -93,10 +93,10 @@ const BlogGridData: BlogTypes[] = [
   },
   {
     id: chance.integer({ min: 1, max: 2000 }),
-    blog_image: blogImages.usaTrip,
+    blog_image: blogImages.usamap,
     blog_title: "American Icons: Empire State Building and U.S. Capitol",
     blog_date: "April 10, 2025",
-    blog_inner_image: blogImages.fieldVisits,
+    blog_inner_image: blogImages.usamap,
     blog_description: `
       <p>As a Notre Dame architecture student, my field trips across the United States unveiled the audacity of American design, epitomized by the Empire State Building and the U.S. Capitol. Arriving in New York City, I stood beneath the Empire State Building, its 1,454-foot Art Deco silhouette piercing the Manhattan sky. Completed in 1931 during the Great Depression, this 102-story skyscraper was erected in a staggering 410 days—a testament to American ambition and engineering prowess. Designed by Shreve, Lamb & Harmon, its steel frame and limestone facade introduced me to the efficiency of modern construction techniques. The spire, originally a mooring mast for airships, symbolizes a bold, if impractical, vision of progress. Walking its 86th-floor observation deck, I sketched its iconic form, inspired by its cinematic legacy in films like *King Kong*.</p>
       <p>In Washington, DC, the U.S. Capitol offered a contrasting lesson in neoclassical elegance. Spanning 1793 to 1866, its construction under architects like William Thornton and Thomas U. Walter weathered political turmoil, including the 1814 British attack that burned its early structure. The cast-iron dome, completed during the Civil War, stands at 288 feet, a symbol of democratic resilience. Its 16.5-acre complex, with 540 rooms, balances grandeur (Corinthian columns, frescoed rotunda) with functionality (legislative chambers). Exploring the Capitol’s crypt and statuary hall, I saw how architecture narrates national identity, much like Kenya’s parliament building reflects post-independence aspirations. The dome’s engineering, using 8.9 million pounds of iron, fascinated me, paralleling my studies on structural innovation at Notre Dame.</p>
@@ -121,7 +121,7 @@ const BlogGridData: BlogTypes[] = [
   },
   {
     id: chance.integer({ min: 1, max: 2000 }),
-    blog_image: blogImages.italyTrip,
+    blog_image: blogImages.italyAirlineview,
     blog_title: "Italy’s Timeless Lessons: Colosseum, St. Peter’s, and Milan Cathedral",
     blog_date: "July 20, 2025",
     blog_inner_image: blogImages.italyTrip,

@@ -29,10 +29,10 @@ const items: Item[] = [
     title: "Contact",
     url: "/contact",
   },
-   {
-    title: "Error",
-    url: "/error",
-  },
+  //  {
+  //   title: "Error",
+  //   url: "/error",
+  // },
 ];
 </script>
 
@@ -82,7 +82,7 @@ const items: Item[] = [
           </NuxtLink>
         </li>
       </ul>
-      <v-row>
+      <!-- <v-row>
         <v-col cols="6" class="pe-1">
           <v-btn
             class="rounded-pill w-100 "
@@ -107,17 +107,17 @@ const items: Item[] = [
             Sign up
           </v-btn>
         </v-col>
-      </v-row>
+      </v-row> -->
       <div class="d-flex flex-column pt-6">
         <a
           href="tel:+1-212-456-7890"
           class="text-dark text-decoration-none opacity-50 hover-opacity-100 text-subtitle-2"
-          >+1-212-456-7890</a
+          >+1-(574)-256-8811</a
         >
         <a
           href="mailto:info@wrappixel.com"
           class="text-dark text-decoration-none text-h4"
-          >info@wrappixel.com</a
+          >Weldon Kimutai</a
         >
       </div>
     </v-sheet>
