@@ -1,131 +1,168 @@
 <script setup lang="ts">
-import { ref } from "vue";
 import { Icon } from "@iconify/vue";
-import img1 from "/images/projects/project3.webp";
-import img2 from "/images/projects/whychoose.png";
-import img3 from "/images/projects/details/pd-43.webp";
-import img4 from "/images/projects/whatwedo.jpg";
+import WhyImg from "/images/projects/whychoose.png";
+import Profile from "/images/profile/user.svg";
+import Overlay from "/images/background/bg-ellipse.svg";
 
-// Add offset per item for vertical image movement (90px each step)
-const items = [
-  {
-    title: "Brand identity",
-    description:
-      "When selecting a web design agency, it's essential to consider its reputation, experience, and the specific needs of your project.",
-    image: img1,
-    offset: -50,
-  },
-  {
-    title: "Web development",
-    description:
-      "When selecting a web design agency, it's essential to consider its reputation, experience, and the specific needs of your project.",
-    image: img2,
-    offset: 80,
-  },
-  {
-    title: "Content creation",
-    description:
-      "When selecting a web design agency, it's essential to consider its reputation, experience, and the specific needs of your project.",
-    image: img3,
-    offset: 200,
-  },
-  {
-    title: "Motion & 3d modeling",
-    description:
-      "When selecting a web design agency, it's essential to consider its reputation, experience, and the specific needs of your project.",
-    image: img4,
-    offset: 350,
-  },
+import user1 from "/images/profile/avatar_1.jpg";
+import user2 from "/images/profile/avatar_2.jpg";
+import user3 from "/images/profile/avatar_3.jpg";
+import user4 from "/images/profile/avatar_4.jpg";
+import Logo from "@/layouts/shared/logo/index.vue";
+
+const users = [
+  { src: user1, alt: "User 1" },
+  { src: user2, alt: "User 2" },
+  { src: user3, alt: "User 3" },
+  { src: user4, alt: "User 4" },
 ];
-
-const activeItem = ref(items[0]);
 </script>
 
 <template>
-  <div class="position-relative bg-secondary" id="service">
+  <div class="why-choose bg-darkgray">
     <SharedSectionSpacer />
-
     <div class="container-lg">
       <v-row>
-        <!-- LEFT SIDE IMAGE -->
-        <v-col cols="12" lg="4" class="position-relative">
-          <SharedLeftSideLightHeading number="03" title="Services" />
-        </v-col>
-
-        <!-- RIGHT SIDE TEXT LIST -->
-        <v-col cols="12" lg="8">
-          <div class="d-flex flex-column ga-11">
-            <SharedCommonHeadingWhite
-              class="mw-670"
-              title="What we do"
-              subtitle="A glimpse into our creativity—exploring innovative designs, successful collaborations, and transformative digital experiences."
-            />
+        <!-- LEFT SIDE IMAGE AND HEADER -->
+        <v-col cols="12" xl="4" class="position-relative">
+          <SharedLeftSideDarkHeading number="04" title="About us" />
+          <div class="d-flex flex-column ga-6 mt-6 mw-xl-430">
+            <h2 class="text-h2 text-dark">Why choose us</h2>
+            <p class="text-subtitle-1 text-dark opacity-70">
+              We blend creativity with strategy to craft unique architectural and design experiences that make a lasting impact. With a focus on innovation, precision, and attention to detail, we bring visionary projects to life.
+            </p>
           </div>
         </v-col>
-      </v-row>
 
-      <v-row class="mt-16">
-        <!-- LEFT SIDE IMAGE -->
-        <v-col cols="12" lg="4" md="6" class="position-relative">
-          <v-fade-transition>
-            <img
-              v-if="activeItem"
-              :src="activeItem.image"
-              height="250"
-              width="400"
-              class="img-offset"
-              style="
-                transition: transform 0.5s ease;
-                transform: translateY(var(--img-offset));
-              "
-              :style="{ '--img-offset': `${activeItem.offset}px` }"
-            />
-          </v-fade-transition>
-        </v-col>
-
-        <!-- RIGHT SIDE TEXT LIST -->
-        <v-col cols="12" lg="8" md="6">
-          <div>
-            <div
-              v-for="(item, index) in items"
-              :key="index"
-              @mouseenter="activeItem = item"
-              class="py-md-12 py-8 border-t border-white border-opacity hover-primary-title"
-            >
-              <v-row class="align-center">
-                <v-col cols="12" lg="5">
-                  <h3 class="text-h3 font-weight-bold cursor-pointer title">
-                    {{ item.title }}
-                  </h3>
-                </v-col>
-                <v-col cols="12" lg="7" class="py-0">
-                  <div >
-                    <v-expand-transition>
-                      <p
-                        v-if="activeItem?.title === item.title"
-                        class="text-white opacity-70"
-                      >
-                        {{ item.description }}
-                      </p>
-                    </v-expand-transition>
+        <!-- RIGHT SIDE SERVICES AND STATS -->
+        <v-col cols="12" xl="8">
+          <v-row>
+            <!-- TESTIMONIAL BLOCK -->
+            <v-col cols="12" md="4" class="d-flex">
+              <div class="pa-7 bg-primary position-relative w-100">
+                <div
+                  class="d-flex flex-column position-relative z-1 h-100 justify-space-between"
+                >
+                  <div>
+                    <div class="d-flex ga-1">
+                      <Icon
+                        icon="solar:star-bold"
+                        class="text-secondary"
+                        height="18"
+                      />
+                      <Icon
+                        icon="solar:star-bold"
+                        class="text-secondary"
+                        height="18"
+                      />
+                      <Icon
+                        icon="solar:star-bold"
+                        class="text-secondary"
+                        height="18"
+                      />
+                      <Icon
+                        icon="solar:star-bold"
+                        class="text-secondary"
+                        height="18"
+                      />
+                      <Icon
+                        icon="solar:star-linear"
+                        class="text-secondary"
+                        height="18"
+                      />
+                    </div>
+                    <p class="text-subtitle-1 mt-3">
+                      The team exceeded our expectations with a stunning architectural design and flawless execution.
+                    </p>
                   </div>
-                </v-col>
-              </v-row>
-            </div>
-          </div>
-          <div class="mt-lg-12 mt-8">
-          <v-btn class="interactive-button" to="" size="lg" flat>
-            <span class="label">See Our Work</span>
-            <v-avatar size="45" class="icon bg-white">
-              <Icon icon="material-symbols:arrow-outward" class="text-secondary" height="20" />
-            </v-avatar>
-          </v-btn>
-        </div>
+                  <div class="pt-16">
+                    <div>
+                      <h2 class="text-h2">98.6%</h2>
+                      <small
+                        class="text-secondary opacity-70 text-subtitle-2 font-weight-regular"
+                        >Customer satisfaction</small
+                      >
+                      <v-divider class="my-4 opacity-10"></v-divider>
+                      <div class="d-flex ga-4 align-center">
+                        <v-avatar size="64">
+                          <img :src="Profile" alt="icon" class="w-100" />
+                        </v-avatar>
+                        <div>
+                          <h5 class="text-subtitle-1">Wade Warren</h5>
+                          <p class="text-subtitle-2 text-secondary opacity-70">
+                            Bank of America
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Bg Overlay -->
+                <img
+                  :src="Overlay"
+                  alt="icon"
+                  class="position-absolute bottom-0 right-0"
+                  width="200"
+                  height="350"
+                />
+              </div>
+            </v-col>
+
+            <!-- PROJECTS AND USERS -->
+            <v-col cols="12" md="4" class="d-flex flex-column">
+              <img :src="WhyImg" alt="why choose us image" class="w-100" />
+              <div class="mt-5 bg-secondary pa-7">
+                <h2 class="text-h2 text-white">500+</h2>
+                <small
+                  class="text-white opacity-70 text-subtitle-2 font-weight-regular"
+                  >Successful projects completed</small
+                >
+                <div class="d-flex mt-6">
+                  <v-avatar
+                    v-for="(user, index) in users"
+                    :key="index"
+                    class="me-n2"
+                    size="40"
+                  >
+                    <img
+                      :src="user.src"
+                      :alt="user.alt"
+                      height="40"
+                      class="border-md border-secondary rounded-circle border-opacity-100"
+                    />
+                  </v-avatar>
+                </div>
+              </div>
+            </v-col>
+
+            <!-- BRANDS SERVED -->
+            <v-col cols="12" md="4" class="d-flex">
+              <div
+                class="border border-sm pa-7 position-relative overflow-hidden brand-served d-flex flex-column h-100 justify-space-between"
+              >
+                <div class="pb-4">
+                  <h2 class="text-h2">238+</h2>
+                  <small
+                    class="text-dark text-subtitle-1 font-weight-regular"
+                    >Brands served worldwide</small
+                  >
+                </div>
+                <div class="pt-16">
+                  <div>
+                    <Logo />
+                    <p class="text-subtitle-1 mt-3">
+                      Our global reach allows us to create unique, culturally relevant architectural solutions for businesses across diverse industries.
+                    </p>
+                  </div>
+                </div>
+                <div class="first-ring"></div>
+                <div class="second-ring"></div>
+              </div>
+            </v-col>
+          </v-row>
         </v-col>
-        
       </v-row>
     </div>
-
     <SharedSectionSpacer />
   </div>
 </template>

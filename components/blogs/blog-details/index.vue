@@ -63,10 +63,7 @@ const post = computed(() => {
         </v-col>
         <v-col cols="12" lg="8"
           ><p class="text-dark text-subtitle-1 opacity-70">
-            At Studiova, we're always evolving, and our latest brand redesign is
-            a bold step forward. This transformation reflects our commitment to
-            innovation and growth, both in how we look and how we connect with
-            you.
+           Outline Designs continues to evolve. Our refreshed identity reflects the same principles we bring to every project — clarity, proportion, and progress. It’s a statement of who we are and how we continue to build, both in form and in philosophy.
           </p>
         </v-col>
         <v-col cols="12" class="mt-lg-16 mt-8">

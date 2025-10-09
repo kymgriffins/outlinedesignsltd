@@ -13,26 +13,26 @@ type CounterItem = {
 
 const counters = ref<CounterItem[]>([
   {
-    value: 45,
+    value: 30,
     suffix: "+",
-    title: "Presence in global markets",
+    title: "Completed Architectural Projects",
     description:
-      "Expanding reach across international regions with localized expertise and worldwide impact.",
+      "Delivering innovative constructions globally with commitment to quality and sustainability.",
   },
   {
-    value: 15,
+    value: 20,
     prefix: "$",
     suffix: "M",
-    title: "In strategic investments",
+    title: "Invested in Green Building Technologies",
     description:
-      "Driving growth with curated partnerships and high-performing, audience-driven initiatives.",
+      "Driving eco-friendly innovation by investing in renewable resources and smart design solutions.",
   },
   {
-    value: 158,
+    value: 50,
     suffix: "+",
-    title: "Trusted brand collaborations",
+    title: "Award-Winning Design Collaborations",
     description:
-      "Shaping industry conversations through innovation, creativity, and lasting influence.",
+      "Partnering with top architects and designers to create iconic, inspiring spaces.",
   },
 ]);
 
@@ -81,75 +81,3 @@ const decrement = (index: number) => {
   }
 };
 </script>
-
-
-<template>
-  <div class="bg-darkgray">
-  <SharedSectionSpacer />
-  <div class="container-lg overflow-hidden">
-    <v-row>
-      <!-- LEFT SIDE IMAGE -->
-      <v-col cols="12" lg="4">
-        <Logo />
-      </v-col>
-      <v-col cols="12" lg="8">
-        <div class="d-flex flex-column ga-lg-10 ga-8">
-          <p class="text-subtitle-1">
-            It’s a canvas for your creativity. It’s your opportunity to
-            transform bold ideas into dynamic, interactive experiences. Your
-            work can shape identities, tell compelling stories, or spark
-            meaningful change. As the digital landscape grows, so do the
-            possibilities. And whether you thrive working remotely or in a
-            buzzing agency space, the thrill of seeing your vision come to life
-            is unmatched.
-          </p>
-          <p class="text-subtitle-1">
-            At Studiova, we bring ideas to life through a range of services:
-            branding, web development, agency solutions, content creation, SaaS,
-            and motion & 3D modeling. As a web designer, you merge artistry and
-            technology to craft "digital experiences" that inform, captivate,
-            and inspire. Every day brings something new — one moment you’re
-            sketching innovative concepts, the next you’re turning them into
-            seamless, responsive designs. Web design keeps you pushing
-            boundaries and creating at every turn!
-          </p>
-        </div>
-      </v-col>
-    </v-row>
-
-    <!-- Counter Blocks -->
-    <SharedSectionSpacer />
-    <div class="counter">
-      <v-row>
-        <v-col
-          v-for="(item, index) in counters"
-          :key="index"
-          cols="12"
-          md="4"
-          class="px-8"
-        >
-          <h2 class="text-60 font-weight-bold lh-in text-dark">
-            {{ item.prefix || "" }}{{ item.animatedValue
-            }}{{ item.suffix || "" }}
-          </h2>
-
-          <v-divider class="mb-6 mt-4 opacity-10"></v-divider>
-
-          <h4 class="text-h4 font-weight-bold mb-3 text-dark">
-            {{ item.title }}
-          </h4>
-
-          <div
-            class="text-subtitle-2 text-dark opacity-70 font-weight-regular mb-4"
-          >
-            {{ item.description }}
-          </div>
-
-         
-        </v-col>
-      </v-row>
-    </div>
-  </div>
-  <SharedSectionSpacer />
-  </div>
-</template>

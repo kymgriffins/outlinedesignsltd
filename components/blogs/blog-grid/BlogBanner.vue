@@ -20,12 +20,12 @@ import ManImage from "/images/background/blog_banner.png";
               class="icon-rotate"
             />
             <p class="text-white text-subtitle-1 mb-0">
-              <span class="opacity-70">Excited to</span>
+              <span class="opacity-70">Join Weldon Kimutai, a Kenyan architect, as he blends </span>
               <span class="text-primary opacity-100">
-                begin something amazing?</span
+                African heritage with global design</span
               >
               <span class="opacity-70"
-                > Get in touch—we'd love to connect with you!</span
+                > through iconic landmarks—connect with his journey!</span
               >
             </p>
           </div>

@@ -14,8 +14,8 @@
           <div class="d-flex flex-column ga-11">
             <SharedCommonHeading
               class="mw-670"
-              title="Recent news"
-              subtitle="Explore the latest trends, bold projects, and creative insights from our agency—shaping the future of branding, digital experiences, and storytelling."
+              title="Recent Stories"
+              subtitle="Explore the latest trends, bold projects, and creative insights from our agency—shaping the future of architecture, design innovation and storytelling."
             />
           </div>
         </v-col>
