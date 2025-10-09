@@ -5,7 +5,7 @@ import AnimatedIcon from "/images/svgs/astrisk-icon.svg";
   <v-container fluid class="hero-container pa-0">
     <!-- Video Background -->
     <video autoplay muted loop playsinline class="video-bg">
-      <source src="/video/banner-video.mp4" type="video/mp4" />
+      <source src="/video/banner-video1.mp4" type="video/mp4" />
     </video>
 
     <!-- Dark overlay -->
