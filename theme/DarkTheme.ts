@@ -1,6 +1,6 @@
 import type { ThemeTypes } from '@/types/theme/ThemeTypes';
 
-const BLACK_WHITE_THEME: ThemeTypes = {
+const DARK_THEME: ThemeTypes = {
     name: 'BLACK_WHITE_THEME',
     dark: true,
     variables: {
@@ -21,5 +21,5 @@ const BLACK_WHITE_THEME: ThemeTypes = {
     }
 };
 
-export { BLACK_WHITE_THEME };
+export { DARK_THEME };
 
