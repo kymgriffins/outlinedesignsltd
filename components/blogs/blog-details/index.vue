@@ -67,17 +67,15 @@ const post = computed(() => {
           </p>
         </v-col>
         <v-col cols="12" class="mt-lg-16 mt-8">
-          <div class="lh-0">
-            <v-img
-              :src="post.blog_inner_image"
-              alt="project inner image"
-              class="w-100"
-              cover
-              height="600"
-            ></v-img>
-          </div>
+          <v-img
+            :src="post.blog_inner_image"
+            alt="project inner image"
+            height="600"
+            class="rounded-2xl shadow-md object-cover w-100"
+          ></v-img>
         </v-col>
-        <v-col cols="12" lg="4"></v-col>
+
+        <v-col cols="12" lg="3"></v-col>
         <v-col cols="12" lg="8"
           ><div
             class="project-desciption mt-lg-16 mt-8"

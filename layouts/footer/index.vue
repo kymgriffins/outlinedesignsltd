@@ -9,13 +9,14 @@ const FooterLinks = ref([
   { title: "Work", url: "/projects" },
   { title: "Terms", url: "/terms-conditions" },
   { title: "Privacy Policy", url: "/privacy-policy" },
-  { title: "Error 404", url: "/error" },
+  // { title: "Error 404", url: "/error" },
 ]);
 
 const SocialLinks = ref([
-  { title: "Facebook", url: "https://www.facebook.com/" },
-  { title: "Instagram", url: "https://www.instagram.com/" },
-  { title: "Twitter", url: "https://x.com/" },
+  { title: "Facebook", url: "https://www.facebook.com/weldon.kimutai.96/" },
+  { title: "Instagram", url: "https://www.instagram.com/weldon_kym/" },
+  { title: "Twitter", url: "https://x.com/kym_weldon" },
+  { title: "LinkedIn", url: "https://www.linkedin.com/in/weldon-kimutai-380610173" },
 ]);
 </script>
 

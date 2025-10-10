@@ -5,58 +5,21 @@ import mock from "../mockAdapter";
 // Images from Unsplash and Pexels (verified, free-to-use for illustrative purposes as of October 2025)
 const blogImages = {
   // Blog 1: From Nairobi to Notre Dame
-  kenyattaUni: "https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=800&q=60",
-  ndCampus: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=60",
-  nairobiSkyline1: "https://images.unsplash.com/photo-1575444691327-7e5c9e8e0b68?auto=format&fit=crop&w=800&q=60",
-  nairobiUniCampus1: "https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=800&fit=crop",
-  nairobiSustainableDesign1: "https://images.unsplash.com/photo-1580430300574-1a5b6a0e6b5e?auto=format&fit=crop&w=800&q=60",
-  nairobiStreetLife1: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=60",
-  notreDameRomeProgram1: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=60",
-  notreDameStudio1: "https://images.unsplash.com/photo-1516321318423-4b3b8c7b0f1e?auto=format&fit=crop&w=800&q=60",
-  notreDameGroupProject1: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=60",
-  colosseumTeaser1: "https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=800&q=60",
-  stPetersTeaser1: "https://images.unsplash.com/photo-1513652859026-aae5be4d7443?auto=format&fit=crop&w=800&q=60",
-  nairobiModel1: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=60",
+  graduationCeremony: "https://pbs.twimg.com/media/GBX4NeFWoAA6F_q?format=jpg&name=medium",
+  ndCampus: "https://i.pinimg.com/736x/eb/8b/7d/eb8b7d3802b9af89faa079182c93de6a.jpg",
   nairobiAirlineview: "https://www.flightsfrom.com/routes/NBO-JFK.png",
   // Blog 2: American Icons
-  usaTrip: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=60",
-  fieldVisits: "https://images.unsplash.com/photo-1473187983305-f615310e7daa?auto=format&fit=crop&w=800&q=60",
-  empireStateExterior1: "https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?auto=format&fit=crop&w=800&q=60",
-  empireStateObservationDeck1: "https://images.unsplash.com/photo-1416095874397-5d2ce6a4b0c4?auto=format&fit=crop&w=800&q=60",
-  empireStateConstruction1: "https://images.unsplash.com/photo-1555109307-f7d9da25c244?auto=format&fit=crop&w=800&q=60",
-  empireStateArtDeco1: "https://images.unsplash.com/photo-1528291151377-165f5107c82a?auto=format&fit=crop&w=800&q=60",
-  usCapitolDome1: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=60",
-  usCapitolRotunda1: "https://images.unsplash.com/photo-1502772066655-938948377873?auto=format&fit=crop&w=800&q=60",
-  usCapitolColumns1: "https://images.pexels.com/photos/2254122/pexels-photo-2254122.jpeg?auto=compress&cs=tinysrgb&w=800&fit=crop",
-  usCapitolFieldTrip1: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=60",
-  nycSkyline1: "https://images.unsplash.com/photo-1504215680853-6c7a66f896e4?auto=format&fit=crop&w=800&q=60",
-  dcMonuments1: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=60",
+  pokagoncourt:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjQwhDw9Ym_igVQs3pWNLEXP87VhAGQSqJw&s",
+
   usamap: "https://www.cia.gov/the-world-factbook/static/maps/US-map.jpg",
   // Blog 3: Italy's Timeless Lessons
-  italyTrip: "https://images.unsplash.com/photo-1504394423664-3d6cd0a6e8db?auto=format&fit=crop&w=800&q=60",
-  colosseumExterior1: "https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=800&q=60",
-  colosseumArches1: "https://images.unsplash.com/photo-1552831388-6a0b3575b2a7?auto=format&fit=crop&w=800&q=60",
-  colosseumHypogeum1: "https://images.unsplash.com/photo-1580130775562-0b8b2a0993f1?auto=format&fit=crop&w=800&q=60",
-  stPetersDome1: "https://images.unsplash.com/photo-1513652859026-aae5be4d7443?auto=format&fit=crop&w=800&q=60",
-  stPetersPiazza1: "https://images.unsplash.com/photo-1503275076964-9d2f8de13dfe?auto=format&fit=crop&w=800&q=60",
-  milanCathedralRooftop1: "https://images.unsplash.com/photo-1503424886303-368589fcc9a7?auto=format&fit=crop&w=800&q=60",
-  milanMadonnina1: "https://images.unsplash.com/photo-1591018653367-1d73b24e2e81?auto=format&fit=crop&w=800&q=60",
-  milanGothicFacade1: "https://images.pexels.com/photos/258160/pexels-photo-258160.jpeg?auto=compress&cs=tinysrgb&w=800&fit=crop",
-  romeTour1: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=60",
-  milanSkyline1: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=800&q=60",
+  italyTrip: "https://i.pinimg.com/originals/4b/1c/7e/4b1c7e2f3f0f4e3f4e3f0f4e3f0f4e3f.jpg",
+
   italyAirlineview: "https://www.flightsfrom.com/routes/FCO-JFK.png",
   // Blog 4: Germany's Architectural Gems
-  germanyMap: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3kOSoUb62MSi2Y6qcoTFiRRI2qojEYqhzTw&s",
-  germanyTrip: "https://i.pinimg.com/736x/de/cd/15/decd15e39360f7ba7acd4077b79912de.jpg",
-  neuschwansteinExterior1: "https://images.unsplash.com/photo-1504609813448-d1d9f71766e4?auto=format&fit=crop&w=800&q=60",
-  neuschwansteinAlps1: "https://images.unsplash.com/photo-1473187983305-f615310e7daa?auto=format&fit=crop&w=800&q=60",
-  neuschwansteinInteriors1: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=60",
-  neuschwansteinTowers1: "https://images.unsplash.com/photo-1501547936600-4bb3e632b1a2?auto=format&fit=crop&w=800&q=60",
-  brandenburgGateColumns1: "https://images.unsplash.com/photo-1527632927984-5b52ff7a3978?auto=format&fit=crop&w=800&q=60",
-  brandenburgGateQuadriga1: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=60",
-  brandenburgGateNight1: "https://images.unsplash.com/photo-1564419320461-6870880221ad?auto=format&fit=crop&w=800&q=60",
-  brandenburgRestoration1: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=60",
-  berlinTour1: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=60",
+  germanyMap: "https://www.cia.gov/the-world-factbook/static/maps/DE-map.jpg",
+  germanyTrip: "https://i.pinimg.com/originals/51/ba/80/51ba8008fd1c5c803ceff528cb2bb7cc.jpg",
+
   bavarianLandscape1: "https://i.pinimg.com/1200x/51/ba/80/51ba8008fd1c5c803ceff528cb2bb7cc.jpg",
 };
 
@@ -75,13 +38,17 @@ const BlogGridData: BlogTypes[] = [
       <p>The moment my plane lifted off from Jomo Kenyatta International Airport, I watched Nairobi's sprawling skyline fade into the clouds—a patchwork of gleaming glass towers and rusty tin roofs, modern ambition colliding with ancestral resilience. This city raised me, teaching lessons no textbook could capture. Where else do you find centuries-old Swahili architectural principles coexisting with contemporary high-rises? The vibrant chaos of Nairobi's streets became my first architecture school: matatus painted in riotous colors streaming through avenues, hawkers' wooden stalls displaying geometric precision, and markets humming with a rhythm that spoke of community, survival, and innovation woven into every corner.</p>
 
       <p>At Kenyatta University, I discovered my true calling. Under the equatorial sun that floods our campus with golden light year-round, I learned to design for Kenya's unique climate—structures that breathe, that welcome the cooling breezes from the Ngong Hills while shielding from torrential rains. My professors, many trained across Africa and Europe, pushed us beyond aesthetics into the heart of purpose: every building must serve its people. I remember crafting my thesis project—a sustainable community center using locally-sourced timber and rammed earth—feeling the rough texture of the materials between my fingers, understanding that architecture here isn't just about beauty. It's about resilience, affordability, and honoring the spirit of <em>harambee</em>, our collective pulling together.</p>
-
+ <div class="gallery-grid">
+        <img src="${blogImages.graduationCeremony}" alt="Nairobi's dramatic skyline mixing modern skyscrapers with traditional structures" class="gallery-img">
+      </div>
       <p>The skyline model that would later win a national student award started as a midnight inspiration. Staring at the illuminated Kenyatta International Convention Centre from my dorm window, I became obsessed with capturing Nairobi's vertical dreams. For three months, I meticulously carved balsa wood, mixed concrete at precise ratios, and studied how our city's architects balanced traditional Maasai circular forms with modernist geometry. That award ceremony changed everything—validation that my vision could transcend borders. When Notre Dame's acceptance letter arrived, offering me a spot in their renowned post-doctoral architecture program, I understood this was my gateway to the world.</p>
 
       <p>South Bend, Indiana, hit me like a winter storm—literally and metaphorically. The cold pierced through my Kenyan wardrobe, but more jarring was the architectural philosophy shift. Notre Dame's Gothic Revival campus, dominated by the golden dome of the Main Building, felt like stepping into a European cathedral. Here, architecture was studied through the lens of Vitruvian principles—firmitas, utilitas, venustas—durability, utility, and beauty. My classmates, hailing from Seoul, São Paulo, Munich, and Mumbai, brought perspectives that shattered my assumptions. In late-night studio sessions fueled by too much coffee, we debated whether architecture should preserve history or propel the future. I argued for both, drawing from Nairobi's informal settlements where residents ingeniously repurpose shipping containers and discarded materials into functional homes—a masterclass in adaptive reuse that rivaled any historic preservation effort.</p>
 
       <p>The Rome Studies Program transformed my entire worldview. Walking into the Colosseum for the first time, I touched the weathered travertine and felt two millennia of history pulse beneath my palm. This amphitheater, built in just eight years by 100,000 workers, stood testament to Roman engineering genius—concrete that strengthened over time, arches distributing weight with mathematical precision, and a hypogeum system beneath the floor that made animals and gladiators appear magically through trapdoors. The Colosseum taught me that truly great architecture transcends its original purpose; it becomes a symbol, a gathering place, a survivor of earthquakes, wars, and the relentless march of time.</p>
-
+ <div class="gallery-grid">
+        <img src="${blogImages.graduationCeremony}" alt="Nairobi's dramatic skyline mixing modern skyscrapers with traditional structures" class="gallery-img">
+      </div>
       <p>St. Peter's Basilica was my spiritual awakening to architecture's capacity for awe. Michelangelo's dome, soaring 448 feet above the Vatican floor, creates an optical illusion—from the ground, it appears perfectly proportioned, yet it's actually an elongated egg shape. Standing in Bernini's piazza, encircled by 284 columns forming outstretched arms embracing the faithful, I sketched frantically, trying to capture how light filtered through the colonnades, creating rhythm and shadow that guided movement. This wasn't just design; it was choreography in stone, a spiritual journey coded into architectural form. I thought of Nairobi's Jamia Mosque, where geometric Islamic patterns create a similar sacred atmosphere, and realized architecture's universal language speaks through light, proportion, and material.</p>
 
       <p>Notre Dame's curriculum demanded mastery of both classical theory and cutting-edge technology. I struggled initially with parametric design software, my fingers—so confident shaping physical models—fumbling across keyboard shortcuts. The academic rigor was relentless: analyzing Renaissance façades by day, rendering 3D models by night, all while navigating American cultural nuances that left me occasionally baffled. Why did classmates seem so informal with professors? How could football games dominate campus life more than architecture lectures? But the international student community became my anchor—weekly dinners where we'd cook dishes from home and swap stories of cultural dissonance became therapeutic sessions where I wasn't alone in feeling foreign.</p>
@@ -97,16 +64,7 @@ const BlogGridData: BlogTypes[] = [
       <p><strong>A Moment That Changed Everything:</strong> Receiving the 2020 Student Innovation Award for my Nairobi skyline model remains my proudest achievement. Standing before Kenya's architectural community, I presented not just a physical model but a vision—that Nairobi could grow vertically while preserving its soul, that glass and steel could coexist with traditional forms. The lead judge, a renowned Tanzanian architect, told me afterward: "You've captured our African urbanism—the beautiful chaos, the resilience, the future growing from the past." That validation ignited my determination to study abroad, to bring global knowledge back home, and to contribute to Africa's architectural narrative on the world stage.</p>
 
       <div class="gallery-grid">
-        <img src="${blogImages.nairobiSkyline1}" alt="Nairobi's dramatic skyline mixing modern skyscrapers with traditional structures" class="gallery-img">
-        <img src="${blogImages.nairobiUniCampus1}" alt="Tree-lined pathways at Kenyatta University campus" class="gallery-img">
-        <img src="${blogImages.nairobiSustainableDesign1}" alt="Innovative eco-friendly architecture in Kenyan informal settlements" class="gallery-img">
-        <img src="${blogImages.nairobiStreetLife1}" alt="Vibrant Nairobi street market showcasing organic urban design" class="gallery-img">
-        <img src="${blogImages.notreDameRomeProgram1}" alt="Notre Dame's Rome Studies Program villa nestled in Italian countryside" class="gallery-img">
-        <img src="${blogImages.notreDameStudio1}" alt="Architecture students collaborating on models in Notre Dame studio" class="gallery-img">
-        <img src="${blogImages.notreDameGroupProject1}" alt="International students presenting architectural concepts at Notre Dame" class="gallery-img">
-        <img src="${blogImages.colosseumTeaser1}" alt="Ancient Colosseum's preserved travertine arches against blue Roman sky" class="gallery-img">
-        <img src="${blogImages.stPetersTeaser1}" alt="Michelangelo's magnificent dome crowning St. Peter's Basilica" class="gallery-img">
-        <img src="${blogImages.nairobiModel1}" alt="Award-winning architectural model capturing Nairobi's vertical aspirations" class="gallery-img">
+        <img src="${blogImages.graduationCeremony}" alt="Nairobi's dramatic skyline mixing modern skyscrapers with traditional structures" class="gallery-img">
       </div>
     `,
   },
@@ -115,7 +73,7 @@ const BlogGridData: BlogTypes[] = [
     blog_image: blogImages.usamap,
     blog_title: "American Icons: Empire State Building and U.S. Capitol",
     blog_date: "April 10, 2025",
-    blog_inner_image: blogImages.usamap,
+    blog_inner_image: blogImages.pokagoncourt,
     blog_description: `
       <p>Manhattan announces itself long before you arrive. Flying into JFK, I watched the city's legendary skyline emerge from the haze—a forest of steel and glass piercing the sky with audacious verticality. But one silhouette dominated all others: the Empire State Building, its Art Deco spire rising like a silver needle threading heaven and earth. Standing at its base on Fifth Avenue, craning my neck until my vision blurred, I felt the weight of architectural history pressing down. This was no mere building; this was American ambition crystallized in limestone and chrome, a monument to the belief that nothing—not economic depression, not engineering limits, not gravity itself—could constrain human aspiration.</p>
 
@@ -150,16 +108,7 @@ const BlogGridData: BlogTypes[] = [
       <p><strong>Cultural Icon Status:</strong> Sketching the Empire State from the 102nd floor observation deck while tourists photographed the spire, I realized architecture's role in popular imagination. This building appeared in countless films—King Kong climbing its facade, Sleepless in Seattle's romantic rendezvous. Architecture enters culture through repeated representation, becoming shorthand for larger ideas. The Empire State symbolizes ambition; the Capitol, democracy. Kenya's buildings don't yet carry this cultural weight globally, but domestically, structures like the KICC evoke national pride. As Kenyan architects, we must design buildings worthy of becoming cultural icons, structures so resonant they embed themselves in our collective consciousness.</p>
 
       <div class="gallery-grid">
-        <img src="${blogImages.empireStateExterior1}" alt="Empire State Building's Art Deco spire soaring above Manhattan skyline" class="gallery-img">
-        <img src="${blogImages.empireStateObservationDeck1}" alt="Breathtaking cityscape from the 86th-floor observation deck" class="gallery-img">
-        <img src="${blogImages.empireStateConstruction1}" alt="Historic construction photos showing rapid building assembly in 1930-31" class="gallery-img">
-        <img src="${blogImages.empireStateArtDeco1}" alt="Chrome and limestone Art Deco detailing on building facade" class="gallery-img">
-        <img src="${blogImages.usCapitolDome1}" alt="U.S. Capitol's cast-iron dome glowing in golden hour light" class="gallery-img">
-        <img src="${blogImages.usCapitolRotunda1}" alt="Ornate frescoed rotunda interior with soaring coffered dome" class="gallery-img">
-        <img src="${blogImages.usCapitolColumns1}" alt="Towering Corinthian columns supporting the Capitol's east portico" class="gallery-img">
-        <img src="${blogImages.usCapitolFieldTrip1}" alt="Architecture students examining Capitol's neoclassical details" class="gallery-img">
-        <img src="${blogImages.nycSkyline1}" alt="Manhattan's iconic skyline dominated by the Empire State Building" class="gallery-img">
-        <img src="${blogImages.dcMonuments1}" alt="U.S. Capitol anchoring Washington's monumental landscape" class="gallery-img">
+
       </div>
     `,
   },
@@ -209,16 +158,7 @@ const BlogGridData: BlogTypes[] = [
       <p><strong>A Sketch Worth a Thousand Words:</strong> Perched on the Milan Cathedral's rooftop at golden hour, sketching the Madonnina statue as it caught the setting sun, I experienced architecture's transformative power viscerally. The statue, installed in 1774, stood as Milan's tallest point by law—no building could exceed it—until the Pirelli Tower challenged this in 1960. They resolved it by placing another Madonnina atop the tower, maintaining tradition while embracing progress. That moment, pencil in hand, Alpine breeze cooling my sunburned face, I understood: architecture at its finest balances reverence and innovation, honor and ambition, past and future.</p>
 
       <div class="gallery-grid">
-        <img src="${blogImages.colosseumExterior1}" alt="The Colosseum's majestic travertine exterior against Roman sky" class="gallery-img">
-        <img src="${blogImages.colosseumArches1}" alt="Ancient arches revealing sophisticated Roman engineering" class="gallery-img">
-        <img src="${blogImages.colosseumHypogeum1}" alt="Underground hypogeum showing mechanical systems for gladiatorial shows" class="gallery-img">
-        <img src="${blogImages.stPetersDome1}" alt="Michelangelo's Renaissance dome soaring above Vatican City" class="gallery-img">
-        <img src="${blogImages.stPetersPiazza1}" alt="Bernini's embracing colonnades creating St. Peter's welcoming piazza" class="gallery-img">
-        <img src="${blogImages.milanCathedralRooftop1}" alt="Gothic spires and flying buttresses forming Milan Cathedral's rooftop forest" class="gallery-img">
-        <img src="${blogImages.milanMadonnina1}" alt="Golden Madonnina statue gleaming above Milan's skyline" class="gallery-img">
-        <img src="${blogImages.milanGothicFacade1}" alt="Intricate Gothic facade adorned with centuries of sculptural detail" class="gallery-img">
-        <img src="${blogImages.romeTour1}" alt="Architectural study tour examining Rome's preservation techniques" class="gallery-img">
-        <img src="${blogImages.milanSkyline1}" alt="Milan's Duomo anchoring the historic city center" class="gallery-img">
+
       </div>
     `,
   },
@@ -270,15 +210,7 @@ const BlogGridData: BlogTypes[] = [
       <p><strong>The Disney Connection:</strong> Learning that Walt Disney's Sleeping Beauty Castle was directly inspired by Neuschwanstein fascinated me as an intersection of high architecture and popular culture. Ludwig's fantasy, considered eccentric in his time, achieved global cultural impact through Disney's interpretation. This demonstrates architecture's ripple effects—one building inspiring another inspiring millions of visitors inspiring countless imaginations. As Kenyan architects, we should consider our work's potential cultural resonance beyond immediate users. Buildings that capture imagination can amplify their impact across media, becoming ambassadors for our design culture.</p>
 
       <div class="gallery-grid">
-        <img src="${blogImages.neuschwansteinExterior1}" alt="Neuschwanstein Castle's fairy-tale towers rising from Bavarian Alps" class="gallery-img">
-        <img src="${blogImages.neuschwansteinAlps1}" alt="Castle dramatically positioned against Alpine peaks and forests" class="gallery-img">
-        <img src="${blogImages.neuschwansteinInteriors1}" alt="Throne Room's Byzantine mosaics depicting Wagnerian opera scenes" class="gallery-img">
-        <img src="${blogImages.neuschwansteinTowers1}" alt="Romanesque Revival towers showcasing 19th-century craftsmanship" class="gallery-img">
-        <img src="${blogImages.brandenburgGateColumns1}" alt="Neoclassical Doric columns framing Brandenburg Gate's five passages" class="gallery-img">
-        <img src="${blogImages.brandenburgGateQuadriga1}" alt="Schadow's quadriga sculpture crowning the gate in golden light" class="gallery-img">
-        <img src="${blogImages.brandenburgGateNight1}" alt="Brandenburg Gate illuminated at dusk, gateway to unified Berlin" class="gallery-img">
-        <img src="${blogImages.brandenburgRestoration1}" alt="Conservation work revealing post-WWII restoration techniques" class="gallery-img">
-        <img src="${blogImages.berlinTour1}" alt="Architecture students examining gate's layered historical narratives" class="gallery-img">
+
         <img src="${blogImages.bavarianLandscape1}" alt="Bavarian Alps providing dramatic backdrop for Ludwig's fantasy" class="gallery-img">
       </div>
     `,
