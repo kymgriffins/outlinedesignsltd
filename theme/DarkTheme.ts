@@ -1,25 +1,24 @@
 import type { ThemeTypes } from '@/types/theme/ThemeTypes';
 
 const DARK_THEME: ThemeTypes = {
-    name: 'BLACK_WHITE_THEME',
+    name: 'DARK_THEME',
     dark: true,
     variables: {
-        'border-color': '#e0e0e0',
+        'border-color': '#e0e6eb',
         'border-opacity': 0.2,
     },
 
     colors: {
-        primary: '#000000',
-        secondary: '#1a1a1a',
-        muted: '#808080',
+        primary: '#C1FF72',
+        secondary: '#1f2a2e',
+        muted: '#1f2a2eb3',
         white: '#ffffff',
-        lightgray: '#d3d3d3',
-        dark: '#000000',
-        surface: '#1a1a1a',
-        darkgray: '#333333',
-        accent: '#4d4d4d'
+        lightgray: '#273338',
+        dark: '#ffffff',
+        surface: '#1F2A2E',
+        darkgray: '#273338',
+        accent: '#343F42'
     }
 };
 
 export { DARK_THEME };
-
