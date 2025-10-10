@@ -20,8 +20,8 @@ import AnimatedIcon from "/images/svgs/astrisk-icon.svg";
             <img
               :src="AnimatedIcon"
               alt="icon"
-              height="44"
-              width="44"
+              height="50"
+              width="50"
               class="icon-rotate"
             />
             <p class="text-white text-subtitle-1 mb-0">
@@ -29,7 +29,7 @@ import AnimatedIcon from "/images/svgs/astrisk-icon.svg";
               <span class="text-primary opacity-100">
                sustainable architecture
               </span>
-              <span class="opacity-70"
+              <span class="opacity-90"
                 >that weave cultural narratives with modern innovation for vibrant civilizations.</span
               >
             </p>

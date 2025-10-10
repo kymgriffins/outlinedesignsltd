@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import { onMounted, computed } from "vue";
-import { useRoute } from "vue-router";
 import { useblogGridStore } from "@/store/blogs";
+import { computed, onMounted } from "vue";
+import { useRoute } from "vue-router";
 import AnimatedIcon from "/images/svgs/astrisk-icon.svg";
 const title = useRoute();
 const getTitle = title.path.split("/").pop();
@@ -67,15 +66,17 @@ const post = computed(() => {
           </p>
         </v-col>
         <v-col cols="12" class="mt-lg-16 mt-8">
-          <v-img
-            :src="post.blog_inner_image"
-            alt="project inner image"
-            height="600"
-            class="rounded-2xl shadow-md object-cover w-100"
-          ></v-img>
-        </v-col>
+          <div class="lh-0">
+            <v-img
+              :src="post.blog_inner_image"
+              alt="project inner image"
+              class="w-100"
 
-        <v-col cols="12" lg="3"></v-col>
+              height="600"
+            ></v-img>
+          </div>
+        </v-col>
+        <v-col cols="12" lg="2"></v-col>
         <v-col cols="12" lg="8"
           ><div
             class="project-desciption mt-lg-16 mt-8"

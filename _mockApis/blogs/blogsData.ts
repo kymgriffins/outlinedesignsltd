@@ -6,10 +6,15 @@ import mock from "../mockAdapter";
 const blogImages = {
   // Blog 1: From Nairobi to Notre Dame
   graduationCeremony: "https://pbs.twimg.com/media/GBX4NeFWoAA6F_q?format=jpg&name=medium",
+  kenyattaUni:"https://i0.wp.com/www.kbc.co.ke/wp-content/uploads/2025/08/Kenyatta-University-scaled.jpg",
   ndCampus: "https://i.pinimg.com/736x/eb/8b/7d/eb8b7d3802b9af89faa079182c93de6a.jpg",
   nairobiAirlineview: "https://www.flightsfrom.com/routes/NBO-JFK.png",
+  notreDameGolden:"https://www.usnews.com/dims4/USNEWS/7c2eaa8/17177859217/resize/800x540%3E/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F53%2Ffff707d9cd1e8e4d55454e57f6c8b7%2Fcollege-photo_154.jpg",
+  notreDameDog: "https://i.pinimg.com/736x/81/6f/b1/816fb1f293fc0a2fea086ff2a05a3d00.jpg",
+  notreDame:"https://media.foxbusiness.com/BrightCove/854081161001/202005/2920/854081161001_6158004154001_6158002314001-vs.jpg",
+  notreDameSchool:"https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/southbend/nd_campus_mapWEB_4c0742f9-a6ea-4d7b-9bec-32e20a46645e.jpg",
   // Blog 2: American Icons
-  pokagoncourt:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjQwhDw9Ym_igVQs3pWNLEXP87VhAGQSqJw&s",
+  pokagoncourt: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjQwhDw9Ym_igVQs3pWNLEXP87VhAGQSqJw&s",
 
   usamap: "https://www.cia.gov/the-world-factbook/static/maps/US-map.jpg",
   // Blog 3: Italy's Timeless Lessons
@@ -30,11 +35,14 @@ const chance = new Chance();
 const BlogGridData: BlogTypes[] = [
   {
     id: chance.integer({ min: 1, max: 2000 }),
-    blog_image: blogImages.nairobiAirlineview,
+    blog_image: blogImages.notreDameSchool,
     blog_title: "From Nairobi to Notre Dame: Launching My Architectural Odyssey",
     blog_date: "September 5, 2024",
     blog_inner_image: blogImages.ndCampus,
     blog_description: `
+     <div class="gallery-grid">
+        <img src="${blogImages.notreDame}" alt="Nairobi's dramatic skyline mixing modern skyscrapers with traditional structures" class="gallery-img">
+      </div>
       <p>The moment my plane lifted off from Jomo Kenyatta International Airport, I watched Nairobi's sprawling skyline fade into the clouds—a patchwork of gleaming glass towers and rusty tin roofs, modern ambition colliding with ancestral resilience. This city raised me, teaching lessons no textbook could capture. Where else do you find centuries-old Swahili architectural principles coexisting with contemporary high-rises? The vibrant chaos of Nairobi's streets became my first architecture school: matatus painted in riotous colors streaming through avenues, hawkers' wooden stalls displaying geometric precision, and markets humming with a rhythm that spoke of community, survival, and innovation woven into every corner.</p>
 
       <p>At Kenyatta University, I discovered my true calling. Under the equatorial sun that floods our campus with golden light year-round, I learned to design for Kenya's unique climate—structures that breathe, that welcome the cooling breezes from the Ngong Hills while shielding from torrential rains. My professors, many trained across Africa and Europe, pushed us beyond aesthetics into the heart of purpose: every building must serve its people. I remember crafting my thesis project—a sustainable community center using locally-sourced timber and rammed earth—feeling the rough texture of the materials between my fingers, understanding that architecture here isn't just about beauty. It's about resilience, affordability, and honoring the spirit of <em>harambee</em>, our collective pulling together.</p>
@@ -46,9 +54,7 @@ const BlogGridData: BlogTypes[] = [
       <p>South Bend, Indiana, hit me like a winter storm—literally and metaphorically. The cold pierced through my Kenyan wardrobe, but more jarring was the architectural philosophy shift. Notre Dame's Gothic Revival campus, dominated by the golden dome of the Main Building, felt like stepping into a European cathedral. Here, architecture was studied through the lens of Vitruvian principles—firmitas, utilitas, venustas—durability, utility, and beauty. My classmates, hailing from Seoul, São Paulo, Munich, and Mumbai, brought perspectives that shattered my assumptions. In late-night studio sessions fueled by too much coffee, we debated whether architecture should preserve history or propel the future. I argued for both, drawing from Nairobi's informal settlements where residents ingeniously repurpose shipping containers and discarded materials into functional homes—a masterclass in adaptive reuse that rivaled any historic preservation effort.</p>
 
       <p>The Rome Studies Program transformed my entire worldview. Walking into the Colosseum for the first time, I touched the weathered travertine and felt two millennia of history pulse beneath my palm. This amphitheater, built in just eight years by 100,000 workers, stood testament to Roman engineering genius—concrete that strengthened over time, arches distributing weight with mathematical precision, and a hypogeum system beneath the floor that made animals and gladiators appear magically through trapdoors. The Colosseum taught me that truly great architecture transcends its original purpose; it becomes a symbol, a gathering place, a survivor of earthquakes, wars, and the relentless march of time.</p>
- <div class="gallery-grid">
-        <img src="${blogImages.graduationCeremony}" alt="Nairobi's dramatic skyline mixing modern skyscrapers with traditional structures" class="gallery-img">
-      </div>
+
       <p>St. Peter's Basilica was my spiritual awakening to architecture's capacity for awe. Michelangelo's dome, soaring 448 feet above the Vatican floor, creates an optical illusion—from the ground, it appears perfectly proportioned, yet it's actually an elongated egg shape. Standing in Bernini's piazza, encircled by 284 columns forming outstretched arms embracing the faithful, I sketched frantically, trying to capture how light filtered through the colonnades, creating rhythm and shadow that guided movement. This wasn't just design; it was choreography in stone, a spiritual journey coded into architectural form. I thought of Nairobi's Jamia Mosque, where geometric Islamic patterns create a similar sacred atmosphere, and realized architecture's universal language speaks through light, proportion, and material.</p>
 
       <p>Notre Dame's curriculum demanded mastery of both classical theory and cutting-edge technology. I struggled initially with parametric design software, my fingers—so confident shaping physical models—fumbling across keyboard shortcuts. The academic rigor was relentless: analyzing Renaissance façades by day, rendering 3D models by night, all while navigating American cultural nuances that left me occasionally baffled. Why did classmates seem so informal with professors? How could football games dominate campus life more than architecture lectures? But the international student community became my anchor—weekly dinners where we'd cook dishes from home and swap stories of cultural dissonance became therapeutic sessions where I wasn't alone in feeling foreign.</p>
@@ -63,8 +69,8 @@ const BlogGridData: BlogTypes[] = [
 
       <p><strong>A Moment That Changed Everything:</strong> Receiving the 2020 Student Innovation Award for my Nairobi skyline model remains my proudest achievement. Standing before Kenya's architectural community, I presented not just a physical model but a vision—that Nairobi could grow vertically while preserving its soul, that glass and steel could coexist with traditional forms. The lead judge, a renowned Tanzanian architect, told me afterward: "You've captured our African urbanism—the beautiful chaos, the resilience, the future growing from the past." That validation ignited my determination to study abroad, to bring global knowledge back home, and to contribute to Africa's architectural narrative on the world stage.</p>
 
-      <div class="gallery-grid">
-        <img src="${blogImages.graduationCeremony}" alt="Nairobi's dramatic skyline mixing modern skyscrapers with traditional structures" class="gallery-img">
+     <div class="gallery-grid">
+        <img src="${blogImages.notreDameDog}" alt="A Dog in a Notre Dame Jersey " class="gallery-img"><img src="${blogImages.notreDameDog}" alt="A Dog in a Notre Dame Jersey " class="gallery-img">
       </div>
     `,
   },

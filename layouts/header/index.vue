@@ -10,11 +10,19 @@ const handleScroll = () => {
   isScrolled.value = window.scrollY > 50;
 };
 
-const logoSrc = computed(() =>
-  isScrolled.value
-    ? "/images/logos/DarkLogo.svg"
-    : "/images/logos/WhiteLogo.svg"
-);
+const logoSrc = computed(() => {
+  const isDark = theme.global.name.value === DARK;
+
+  if (isDark) {
+    // Dark theme → switch on scroll
+    return isScrolled.value
+      ? "/images/logos/DarkLogo.svg" // scrolled: light header
+      : "/images/logos/WhiteLogo.svg"; // default: dark bg
+  } else {
+    // Light theme → white always
+    return "/images/logos/WhiteLogo.svg";
+  }
+});
 
 const LIGHT = "LIGHT_THEME";
 const DARK = "DARK_THEME";
