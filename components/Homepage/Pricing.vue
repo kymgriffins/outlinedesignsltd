@@ -9,9 +9,13 @@ const plans = [
       "Initial vision and design concepts tailored to your architectural needs.",
     features: [
       "Site analysis & feasibility study",
+      "Zoning and code research",
       "Preliminary sketches and mood boards",
-      "3D conceptual renderings",
-      "Client collaboration sessions",
+      "3D conceptual renderings and massing models",
+      "Spatial planning and programming",
+      "Client collaboration sessions and feedback rounds",
+      "Preliminary cost estimation",
+      "Basic environmental impact considerations",
     ],
     mostPopular: false,
   },
@@ -23,26 +27,35 @@ const plans = [
       "Comprehensive design detailing to bring your project to life.",
     features: [
       "Everything in Concept Development",
-      "Detailed floor plans & elevations",
+      "Detailed floor plans, sections & elevations",
       "Material and finish selections",
-      "Coordination with structural engineers",
+      "Structural and MEP coordination",
+      "Interior design concepts and furniture layouts",
+      "Lighting and sustainability considerations",
+      "Cost budgeting and value engineering",
+      "Client presentations and design revisions",
     ],
     mostPopular: false,
   },
   {
-    title: "Construction ",
+    title: "Construction",
     price: 3499,
     description:
       "Complete and precise documentation for seamless construction execution.",
     features: [
       "Everything in Design Development",
-      "Detailed construction drawings",
-      "Permit application support",
-      "On-site consultation during construction",
+      "Comprehensive construction drawings and details",
+      "Permit application support and documentation",
+      "Construction administration and site visits",
+      "Coordination with contractors and consultants",
+      "Shop drawing reviews",
+      "Final inspections and punch list management",
+      "Post-occupancy evaluation support",
     ],
     mostPopular: true,
   },
 ];
+
 
 // Kenyan construction and business partners
 const logos = [
