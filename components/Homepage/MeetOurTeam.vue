@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { Icon } from "@iconify/vue";
-
+import weldon from "/images/team/weldon.png";
+import judy from "/images/team/judychesire.jpg";
+import kevin from "/images/team/kevin.png";
 // Use the new images from Amos and Sarah as team photos
 const amosImage = "https://i.pinimg.com/736x/c0/f1/07/c0f1078ee071f05fc1b1832b838a3a64.jpg";
 const sarahImage = "https://i.pinimg.com/736x/eb/82/e6/eb82e6a177bce4034f1ec90e43f6077b.jpg";
@@ -11,7 +13,7 @@ const items = [
   {
     name: "Kevin Yegon",
     role: "Architect",
-    image: amosImage,
+    image: kevin,
   },
   {
     name: "Bruce ",
@@ -21,12 +23,12 @@ const items = [
   {
     name: "Judy ",
     role: "Consultant",
-    image: sarahImage,
+    image: judy,
   },
   {
     name: "Weldon",
     role: "CEO",
-    image: weldonImage, // placeholder if you want to keep one original
+    image: weldon, // placeholder if you want to keep one original
   },
 ];
 </script>

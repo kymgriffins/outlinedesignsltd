@@ -97,7 +97,7 @@ const logos = [
   },
   {
     name: "Basco Products",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%23003d7a' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='14' font-weight='bold' fill='white' text-anchor='middle'%3EBASCO%3C/text%3E%3C/svg%3E"
+    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%23808080' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='14' font-weight='bold' fill='white' text-anchor='middle'%3EBASCO%3C/text%3E%3C/svg%3E"
   },
   {
     name: "Tononoka Steel",
