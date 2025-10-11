@@ -3,4 +3,6 @@
     <AboutPageCounterCards/>
     <AboutPageFeatureBanner/>
     <HomepageMeetOurTeam/>
+    <HomepagePricing/>
+
 </template>

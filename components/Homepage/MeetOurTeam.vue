@@ -64,7 +64,7 @@ const items = [
                 <Icon icon="garden:twitter-stroke-12" height="18" class="text-secondary" />
               </v-avatar>
               <v-avatar size="44" class="social-icon cursor-pointer">
-                <Icon icon="simple-icons:behance" height="18" class="text-secondary" />
+                <Icon icon="simple-icons:instagram" height="18" class="text-secondary" />
               </v-avatar>
               <v-avatar size="44" class="social-icon cursor-pointer">
                 <Icon icon="entypo-social:linkedin" height="18" class="text-secondary" />

@@ -8,7 +8,7 @@ const LIGHT_THEME: ThemeTypes = {
         'border-opacity': 1,
     },
     colors: {
-        primary: '#C1FF72',
+        primary: '#00ADB5',
         secondary: '#1f2a2e',
         muted: '#E0E0E0',
         white: '#ffffff',

@@ -6,23 +6,23 @@ import mock from "../mockAdapter";
 const blogImages = {
   // Blog 1: From Nairobi to Notre Dame
   graduationCeremony: "https://pbs.twimg.com/media/GBX4NeFWoAA6F_q?format=jpg&name=medium",
-  kenyattaUni:"https://i0.wp.com/www.kbc.co.ke/wp-content/uploads/2025/08/Kenyatta-University-scaled.jpg",
+  kenyattaUni: "https://i0.wp.com/www.kbc.co.ke/wp-content/uploads/2025/08/Kenyatta-University-scaled.jpg",
   ndCampus: "https://i.pinimg.com/736x/eb/8b/7d/eb8b7d3802b9af89faa079182c93de6a.jpg",
   nairobiAirlineview: "https://www.flightsfrom.com/routes/NBO-JFK.png",
-  notreDameGolden:"https://www.usnews.com/dims4/USNEWS/7c2eaa8/17177859217/resize/800x540%3E/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F53%2Ffff707d9cd1e8e4d55454e57f6c8b7%2Fcollege-photo_154.jpg",
+  notreDameGolden: "https://www.usnews.com/dims4/USNEWS/7c2eaa8/17177859217/resize/800x540%3E/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F53%2Ffff707d9cd1e8e4d55454e57f6c8b7%2Fcollege-photo_154.jpg",
   notreDameDog: "https://i.pinimg.com/736x/81/6f/b1/816fb1f293fc0a2fea086ff2a05a3d00.jpg",
-  notreDame:"https://media.foxbusiness.com/BrightCove/854081161001/202005/2920/854081161001_6158004154001_6158002314001-vs.jpg",
-  notreDameSchool:"https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/southbend/nd_campus_mapWEB_4c0742f9-a6ea-4d7b-9bec-32e20a46645e.jpg",
+  notreDame: "https://media.foxbusiness.com/BrightCove/854081161001/202005/2920/854081161001_6158004154001_6158002314001-vs.jpg",
+  notreDameSchool: "https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/southbend/nd_campus_mapWEB_4c0742f9-a6ea-4d7b-9bec-32e20a46645e.jpg",
   // Blog 2: American Icons
   pokagoncourt: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjQwhDw9Ym_igVQs3pWNLEXP87VhAGQSqJw&s",
-
-  usamap: "https://www.cia.gov/the-world-factbook/static/maps/US-map.jpg",
+  usaFlag: "https://images.unsplash.com/photo-1588671972654-f5ec91fb8b42?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=868",
+  usamap: "https://images.unsplash.com/photo-1515861209048-dae6a1e1ed56?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
   // Blog 3: Italy's Timeless Lessons
   italyTrip: "https://i.pinimg.com/originals/4b/1c/7e/4b1c7e2f3f0f4e3f4e3f0f4e3f0f4e3f.jpg",
 
-  italyAirlineview: "https://www.flightsfrom.com/routes/FCO-JFK.png",
+  italyAirlineview: "https://hips.hearstapps.com/hmg-prod/images/places-in-italy-lead-marco-bottigelli-65e6208eb4a69.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*",
   // Blog 4: Germany's Architectural Gems
-  germanyMap: "https://www.cia.gov/the-world-factbook/static/maps/DE-map.jpg",
+  germanyMap: "https://images.ctfassets.net/mivicpf5zews/7lP0a294imN5SfCejHUqnB/9cbd693b583a62c8a35ff038cee49588/Germany.jpg",
   germanyTrip: "https://i.pinimg.com/originals/51/ba/80/51ba8008fd1c5c803ceff528cb2bb7cc.jpg",
 
   bavarianLandscape1: "https://i.pinimg.com/1200x/51/ba/80/51ba8008fd1c5c803ceff528cb2bb7cc.jpg",
@@ -79,7 +79,7 @@ const BlogGridData: BlogTypes[] = [
     blog_image: blogImages.usamap,
     blog_title: "American Icons: Empire State Building and U.S. Capitol",
     blog_date: "April 10, 2025",
-    blog_inner_image: blogImages.pokagoncourt,
+    blog_inner_image: blogImages.usaFlag,
     blog_description: `
       <p>Manhattan announces itself long before you arrive. Flying into JFK, I watched the city's legendary skyline emerge from the haze—a forest of steel and glass piercing the sky with audacious verticality. But one silhouette dominated all others: the Empire State Building, its Art Deco spire rising like a silver needle threading heaven and earth. Standing at its base on Fifth Avenue, craning my neck until my vision blurred, I felt the weight of architectural history pressing down. This was no mere building; this was American ambition crystallized in limestone and chrome, a monument to the belief that nothing—not economic depression, not engineering limits, not gravity itself—could constrain human aspiration.</p>
 
@@ -250,3 +250,5 @@ mock.onPost("/api/data/blog/post").reply((config: string | any) => {
 });
 
 export default BlogGridData;
+
+// create a post wysiwyg  editor to populate these data above
