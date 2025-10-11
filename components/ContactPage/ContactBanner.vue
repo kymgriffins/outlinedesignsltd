@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import AnimatedIcon from "/images/svgs/astrisk-icon.svg";
 import ManImage from "/images/background/contact-banner.png";
+import teamImage from "/images/background/dd.png";
 </script>
 
 <template>
   <div class="common-banner position-relative">
-    <v-img :src="ManImage" cover height="650" class="w-100"></v-img>
+    <v-img :src="teamImage" cover height="650" class="w-100"></v-img>
     <div class="banner-overlay"></div>
     <div class="container-lg">
       <div class="common-banner-content">

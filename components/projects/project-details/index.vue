@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import { Icon } from "@iconify/vue";
-import { onMounted, computed } from "vue";
-import { useRoute } from "vue-router";
 import { useProjectsGridStore } from "@/store/project";
+import { Icon } from "@iconify/vue";
+import { computed, onMounted } from "vue";
+import { useRoute } from "vue-router";
 import AnimatedIcon from "/images/svgs/astrisk-icon.svg";
 
 const formattedDescription = computed(() => {
@@ -110,7 +109,7 @@ const post = computed(() => {
           <p class="text-subtitle-2 text-dark opacity-70">Website</p>
           <div class="d-flex ga-2 mt-2">
             <span class="text-subtitle-1 font-weight-medium"
-              >www.studiova.com</span
+              >www.outlinedesigns.co.ke</span
             >
           </div>
         </div>

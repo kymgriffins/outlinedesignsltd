@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import AnimatedIcon from "/images/svgs/astrisk-icon.svg";
 import ManImage from "/images/background/blog_banner.png";
+const blogImage= "https://i.pinimg.com/736x/30/ec/af/30ecaf897bb6672d439d86aacf3035c7.jpg"
 </script>
 
 <template>
   <div class="common-banner position-relative">
-    <v-img :src="ManImage" cover height="650" class="w-100"></v-img>
+    <v-img :src="blogImage" cover height="650" class="w-100"></v-img>
     <div class="banner-overlay"></div>
     <div class="container-lg">
       <div class="common-banner-content">

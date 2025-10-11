@@ -20,9 +20,9 @@ import MainImage from "/images/background/privacy-policy.png";
               class="icon-rotate"
             />
             <p class="text-white text-subtitle-1 mb-0">
-              <span class="opacity-70">Understand the</span>
-              <span class="text-primary opacity-100"> Rules & Guidelines </span>
-              <span class="opacity-70">Before Using Our Services</span>
+              <span class="opacity-70">Explore our approach to</span>
+              <span class="text-primary opacity-100"> Design Integrity </span>
+              <span class="opacity-70">and how we safeguard your trust.</span>
             </p>
           </div>
         </div>
@@ -31,81 +31,74 @@ import MainImage from "/images/background/privacy-policy.png";
           class="d-flex flex-md-row flex-column ga-5 align-md-end align-start mt-md-6 mt-3"
         >
           <h1 class="text-white text-h1 font-weight-bold mb-0">
-            Privacy Policy
+            Privacy & Client Policy
           </h1>
           <SharedBigBadge />
         </div>
       </div>
     </div>
   </div>
+
   <div class="bg-darkgray leagal">
     <div class="container-lg py-lg-16 py-8">
       <p class="text-subtitle-1">
-        This Privacy Statement explains how personal information about our
-        (potential) customers and other individuals using our services is
-        collected, used, and disclosed by **Nuxtjs Template** ("us", "we",
-        "our"). This Privacy Statement describes our privacy practices in
-        relation to the use of our websites, including any customer portals or
-        interactive websites (<a
-          class="hover-primary-link text-decoration-none text-black font-weight-bold"
-          target="_blank"
-          href="https://nuxt.com/"
-          >https://nuxt.com/</a
-        >), our software (Nuxtjs), services, solutions, tools, and related
-        applications, services, and programs, including research and marketing
-        activities, offered by us (the "Services").
+        At <strong>Outline Designs</strong>, we value the relationships we build with our clients, partners,
+        and community. This Privacy & Client Policy explains how we handle your personal information
+        as part of our architectural and design services. It also outlines our promise to uphold
+        transparency, confidentiality, and respect in all our interactions.
       </p>
+
       <p class="text-subtitle-1">
-        By signing up for our Services and agreeing to our General Terms and
-        Conditions, you consent to the collection, usage, storage, and
-        disclosure of your information as described in this Privacy Statement.
+        By engaging with our team—whether through consultations, project collaborations, or
+        digital communication—you consent to our responsible use and protection of your shared data
+        in accordance with this policy.
       </p>
+
       <p class="text-subtitle-1">
-        Our Services may contain links to external websites or services. The
-        privacy practices and content of such sites or services will be governed
-        by their respective privacy policies.
+        Occasionally, our website may feature links to external resources, partners, or
+        platforms. Please note that each external site operates under its own privacy practices,
+        which we encourage you to review.
       </p>
+
       <p class="text-subtitle-1">
-        We may update this Privacy Statement periodically. If changes occur, we
-        will notify you by updating the date at the top of the statement and
-        providing additional notifications (such as a statement on our homepage
-        or an email notification). We encourage you to review this Privacy
-        Statement whenever you use our Services to stay informed about how we
-        handle your information.
+        As we evolve, we may update this policy to reflect new standards, technologies, or
+        practices. Any updates will be clearly noted on this page. We recommend reviewing this
+        statement periodically to stay informed about how we manage your information.
       </p>
+
       <div class="my-6">
-        <h4 class="text-h4 text-dark">Personal Information Collection</h4>
+        <h4 class="text-h4 text-dark">Information We Collect</h4>
         <p class="mt-6 text-subtitle-1">
-          While using our Services, we may ask you to provide certain personally
-          identifiable information that can be used to contact or identify you.
-          This may include basic user details (such as your name, email address,
-          telephone number, and profile picture), company information, and any
-          other data you choose to share with us.
+          During project discussions or when you reach out to us, we may collect details such as
+          your name, email address, contact number, company name, and any project-related information
+          you share with us. This helps us tailor our services and maintain clear communication.
         </p>
+
         <p class="text-subtitle-1">
-          We do not collect financial information (such as credit card details
-          or security codes). All payments are handled through a third-party
-          provider. If applicable, please refer to their Privacy
+          We do not collect or store sensitive financial information directly. Payments for
+          services are securely processed through our trusted third-party providers, whose
+          privacy policies can be accessed via their official platforms.
         </p>
       </div>
+
       <div class="my-6">
-        <h4 class="text-h4 text-dark">
-          Personal Information You Provide to Us
-        </h4>
+        <h4 class="text-h4 text-dark">How We Use Your Information</h4>
         <p class="mt-6 text-subtitle-1">
-          When using our Services, you may provide personally identifiable
-          information, such as when creating an account, requesting customer
-          support, or interacting with our platform.
+          We use your information solely to deliver architectural and design services effectively,
+          enhance your experience, and communicate updates relevant to your project or inquiry.
         </p>
+
         <p class="mt-6 text-subtitle-1">
-          As noted, we do not collect financial details directly. Payments are
-          processed via third-party providers. Please review their privacy
-          policy for details:<a
+          Your data is never shared, sold, or disclosed without your consent, except where
+          legally required. For payment or third-party integrations, please review our partner’s
+          privacy policy here:
+          <a
             class="hover-primary-link text-decoration-none text-black font-weight-bold"
             target="_blank"
-            href="http://nuxtjstemplates.com/"
-            >http://nuxtjstemplates.com/</a
-          >.
+            href="https://outlinedesigns.co.ke/"
+          >
+            https://outlinedesigns.co.ke/
+          </a>.
         </p>
       </div>
     </div>

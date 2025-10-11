@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import { Icon } from "@iconify/vue";
 import weldon from "/images/team/weldon.png";
-import judy from "/images/team/judychesire.jpg";
+import judy from "/images/team/Judychesire.jpg";
 import kevin from "/images/team/kevin.png";
 // Use the new images from Amos and Sarah as team photos
 
