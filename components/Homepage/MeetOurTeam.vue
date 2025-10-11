@@ -5,30 +5,50 @@ import weldon from "/images/team/weldon.png";
 import judy from "/images/team/judychesire.jpg";
 import kevin from "/images/team/kevin.png";
 // Use the new images from Amos and Sarah as team photos
-const amosImage = "https://i.pinimg.com/736x/c0/f1/07/c0f1078ee071f05fc1b1832b838a3a64.jpg";
-const sarahImage = "https://i.pinimg.com/736x/eb/82/e6/eb82e6a177bce4034f1ec90e43f6077b.jpg";
+
 const rowellImage = "https://i.pinimg.com/1200x/ab/59/00/ab590001e58933bdbd6ab0adbe25428c.jpg";
-const weldonImage= "https://i.pinimg.com/736x/af/04/f4/af04f467aa6cabdab016a46aed5889ef.jpg";
+
 const items = [
   {
     name: "Kevin Yegon",
     role: "Architect",
     image: kevin,
+    socials: {
+      twitter: "https://twitter.com/kevin_yegon",
+      instagram: "https://instagram.com/kevin.yegon",
+      linkedin: "https://linkedin.com/in/kevin-yegon",
+    },
   },
   {
-    name: "Bruce ",
+    name: "Bruce",
     role: "Structural Engineer",
     image: rowellImage,
+    socials: {
+      twitter: "https://twitter.com/bruce_struct",
+      instagram: "https://instagram.com/bruce.struct",
+      linkedin: "https://linkedin.com/in/bruce-structural",
+    },
   },
   {
-    name: "Judy ",
+    name: "Judy",
     role: "Consultant",
     image: judy,
+    socials: {
+      twitter: "https://twitter.com/judy_consult",
+      instagram: "https://instagram.com/judy.consult",
+      linkedin: "https://linkedin.com/in/judy-chesire",
+    },
   },
   {
     name: "Weldon",
     role: "CEO",
-    image: weldon, // placeholder if you want to keep one original
+    image: weldon,
+    socials: {
+      twitter: "https://x.com/kym_weldon",
+      instagram: "https://www.instagram.com/weldon_kym/",
+      linkedin: "https://www.linkedin.com/in/weldon-kimutai-380610173",
+    },
+
   },
 ];
 </script>
@@ -61,17 +81,24 @@ const items = [
               class="w-100 obj-cover"
               height="470"
             />
-            <div class="team-social d-flex ga-3 position-absolute ">
-              <v-avatar size="44" class="social-icon cursor-pointer">
-                <Icon icon="garden:twitter-stroke-12" height="18" class="text-secondary" />
-              </v-avatar>
-              <v-avatar size="44" class="social-icon cursor-pointer">
-                <Icon icon="simple-icons:instagram" height="18" class="text-secondary" />
-              </v-avatar>
-              <v-avatar size="44" class="social-icon cursor-pointer">
-                <Icon icon="entypo-social:linkedin" height="18" class="text-secondary" />
-              </v-avatar>
-            </div>
+            <div class="team-social d-flex ga-3 position-absolute">
+  <v-avatar size="44" class="social-icon cursor-pointer">
+    <a :href="item.socials.twitter" target="_blank" rel="noopener noreferrer">
+      <Icon icon="garden:twitter-stroke-12" height="18" class="text-secondary" />
+    </a>
+  </v-avatar>
+  <v-avatar size="44" class="social-icon cursor-pointer">
+    <a :href="item.socials.instagram" target="_blank" rel="noopener noreferrer">
+      <Icon icon="simple-icons:instagram" height="18" class="text-secondary" />
+    </a>
+  </v-avatar>
+  <v-avatar size="44" class="social-icon cursor-pointer">
+    <a :href="item.socials.linkedin" target="_blank" rel="noopener noreferrer">
+      <Icon icon="entypo-social:linkedin" height="18" class="text-secondary" />
+    </a>
+  </v-avatar>
+</div>
+
             <div class="teambox"></div>
           </div>
           <div class="mt-5">
