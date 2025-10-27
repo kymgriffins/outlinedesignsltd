@@ -16,21 +16,33 @@ const items = [
     name: "Kevin Yegon",
     role: "Architect",
     image: kevin,
+    twitter: "https://twitter.com/kevinyegon",
+    instagram: "https://instagram.com/kevinyegon",
+    linkedin: "https://linkedin.com/in/kevinyegon"
   },
   {
     name: "Bruce",
     role: "Structural Engineer",
     image: bruceImage,
+    twitter: "https://twitter.com/bruce",
+    instagram: "https://instagram.com/bruce",
+    linkedin: "https://linkedin.com/in/bruce"
   },
   {
     name: "Judy",
     role: "Consultant",
     image: judy,
+    twitter: "https://twitter.com/judy",
+    instagram: "https://instagram.com/judy",
+    linkedin: "https://linkedin.com/in/judy"
   },
   {
     name: "Weldon",
     role: "CEO",
     image: weldon,
+    twitter: "https://twitter.com/weldon",
+    instagram: "https://instagram.com/weldon",
+    linkedin: "https://linkedin.com/in/weldon"
   },
 ];
 
@@ -81,21 +93,27 @@ const handleImageError = (event: Event, itemName: string) => {
               />
             </div>
             <div class="team-social d-flex ga-3 position-absolute">
-              <v-avatar size="44" class="social-icon cursor-pointer">
-                <Icon icon="garden:twitter-stroke-12" height="18" class="text-secondary" />
-              </v-avatar>
-              <v-avatar size="44" class="social-icon cursor-pointer">
-                <Icon icon="simple-icons:instagram" height="18" class="text-secondary" />
-              </v-avatar>
-              <v-avatar size="44" class="social-icon cursor-pointer">
-                <Icon icon="entypo-social:linkedin" height="18" class="text-secondary" />
-              </v-avatar>
+              <a :href="item.twitter" target="_blank" rel="noopener noreferrer" class="social-link">
+                <v-avatar size="44" class="social-icon cursor-pointer">
+                  <Icon icon="garden:twitter-stroke-12" height="18" class="text-secondary" />
+                </v-avatar>
+              </a>
+              <a :href="item.instagram" target="_blank" rel="noopener noreferrer" class="social-link">
+                <v-avatar size="44" class="social-icon cursor-pointer">
+                  <Icon icon="simple-icons:instagram" height="18" class="text-secondary" />
+                </v-avatar>
+              </a>
+              <a :href="item.linkedin" target="_blank" rel="noopener noreferrer" class="social-link">
+                <v-avatar size="44" class="social-icon cursor-pointer">
+                  <Icon icon="entypo-social:linkedin" height="18" class="text-secondary" />
+                </v-avatar>
+              </a>
             </div>
             <div class="teambox"></div>
           </div>
           <div class="mt-5 team-info">
-            <h4 class="text-h4 team-name text-white">{{ item.name }}</h4>
-            <p class="text-white opacity-70 team-role">{{ item.role }}</p>
+            <h4 class="text-h4 team-name">{{ item.name }}</h4>
+            <p class="team-role">{{ item.role }}</p>
           </div>
         </v-col>
       </v-row>
@@ -134,14 +152,6 @@ const handleImageError = (event: Event, itemName: string) => {
   display: block;
 }
 
-/* Ensure full images are visible without cropping */
-.our-team:has(img[alt*="Kevin"]) .team-member-image,
-.our-team:has(img[alt*="Judy"]) .team-member-image,
-.our-team:has(img[alt*="Weldon"]) .team-member-image,
-.our-team:has(img[alt*="Bruce"]) .team-member-image {
-  object-fit: contain;
-}
-
 .our-team:hover .team-member-image {
   transform: scale(1.03);
   transition: transform 0.3s ease;
@@ -159,6 +169,11 @@ const handleImageError = (event: Event, itemName: string) => {
 .our-team:hover .team-social {
   opacity: 1;
   transform: translateY(0);
+}
+
+.social-link {
+  text-decoration: none;
+  display: inline-block;
 }
 
 .social-icon {
@@ -197,12 +212,15 @@ const handleImageError = (event: Event, itemName: string) => {
 .team-name {
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   margin-bottom: 0.5rem;
-  color: white;
+  color: rgb(var(--v-theme-dark));
+  font-weight: 600;
 }
 
 .team-role {
   font-size: clamp(0.875rem, 1.5vw, 1rem);
-  color: white;
+  color: rgb(var(--v-theme-dark));
+  opacity: 0.7;
+  margin: 0;
 }
 
 /* Mobile responsiveness */

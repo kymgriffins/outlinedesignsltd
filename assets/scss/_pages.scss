@@ -363,12 +363,6 @@
     max-height: 60%;
   }
 
-  .our-team {
-    img {
-      height: 350px !important;
-    }
-  }
-
   .brand-served {
     .first-ring {
       left: -17%;
@@ -384,12 +378,6 @@
 }
 
 @media screen and (max-width:1024px) {
-  .our-team {
-    img {
-      height: 480px !important;
-    }
-  }
-
   .container-lg {
     padding: 0 20px;
   }
@@ -442,12 +430,6 @@
       top: 120px;
     }
 
-  }
-
-  .our-team {
-    img {
-      height: 350px !important;
-    }
   }
 
   .container-lg {
