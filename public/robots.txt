@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+
+Sitemap: https://outlinedesignsltd.vercel.app/sitemap.xml
