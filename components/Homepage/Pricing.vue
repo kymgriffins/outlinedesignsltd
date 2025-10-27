@@ -56,78 +56,38 @@ const plans = [
   },
 ];
 
-
-// Kenyan construction and business partners
+// Real Kenyan company logos
 const logos = [
   {
     name: "Bamburi Cement",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%23c41e3a' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='14' font-weight='bold' fill='white' text-anchor='middle'%3EBAMBURI%3C/text%3E%3C/svg%3E"
+    logoimg: "https://upload.wikimedia.org/wikipedia/en/7/7e/Bamburi_Cement_Logo.png"
   },
   {
     name: "East African Portland Cement",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%230066cc' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='14' font-weight='bold' fill='white' text-anchor='middle'%3EEAPCC%3C/text%3E%3C/svg%3E"
+    logoimg: "https://upload.wikimedia.org/wikipedia/en/thumb/6/64/East_African_Portland_Cement_Company_Logo.jpg/250px-East_African_Portland_Cement_Company_Logo.jpg"
   },
-  {
-    name: "National Construction Authority",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%23006838' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='14' font-weight='bold' fill='white' text-anchor='middle'%3ENCA%3C/text%3E%3C/svg%3E"
-  },
-  {
-    name: "Kenya Power",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%23000080' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='22' font-family='Arial' font-size='12' font-weight='bold' fill='%23ffd700' text-anchor='middle'%3EKENYA%3C/text%3E%3Ctext x='60' y='33' font-family='Arial' font-size='10' fill='%23ffd700' text-anchor='middle'%3EPOWER%3C/text%3E%3C/svg%3E"
-  },
+
+
   {
     name: "Safaricom",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%2300a550' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='13' font-weight='bold' fill='white' text-anchor='middle'%3ESAFARICOM%3C/text%3E%3C/svg%3E"
+    logoimg: "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Safaricom_logo.svg/250px-Safaricom_logo.svg.png"
   },
   {
     name: "Equity Bank",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Cdefs%3E%3ClinearGradient id='eq' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23c41e3a'/%3E%3Cstop offset='100%25' stop-color='%23d4000f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23eq)' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='13' font-weight='bold' fill='white' text-anchor='middle'%3EEQUITY%3C/text%3E%3C/svg%3E"
+    logoimg: "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Equity_Bank_Logo.png/250px-Equity_Bank_Logo.png"
   },
   {
     name: "KCB Bank",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%23006838' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EKCB%3C/text%3E%3C/svg%3E"
+    logoimg: "https://upload.wikimedia.org/wikipedia/en/thumb/d/de/KCB_Bank_Kenya_Limited_logo.png/250px-KCB_Bank_Kenya_Limited_logo.png"
   },
-  {
-    name: "Hass Consult",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%23ff6600' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='13' font-weight='bold' fill='white' text-anchor='middle'%3EHASS%3C/text%3E%3C/svg%3E"
-  },
+
   {
     name: "Crown Paints",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%23ffd700' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='13' font-weight='bold' fill='%23333' text-anchor='middle'%3ECROWN%3C/text%3E%3C/svg%3E"
+    logoimg: "https://upload.wikimedia.org/wikipedia/commons/4/42/Crownpaintslogo.png"
   },
-  {
-    name: "Basco Products",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%23808080' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='14' font-weight='bold' fill='white' text-anchor='middle'%3EBASCO%3C/text%3E%3C/svg%3E"
-  },
-  {
-    name: "Tononoka Steel",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%23808080' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='12' font-weight='bold' fill='white' text-anchor='middle'%3ETONONOKA%3C/text%3E%3C/svg%3E"
-  },
-  {
-    name: "Mabati Rolling Mills",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%23c41e3a' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='13' font-weight='bold' fill='white' text-anchor='middle'%3EMABATI%3C/text%3E%3C/svg%3E"
-  },
-  // Duplicate for seamless marquee effect
-  {
-    name: "Bamburi Cement",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%23c41e3a' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='14' font-weight='bold' fill='white' text-anchor='middle'%3EBAMBURI%3C/text%3E%3C/svg%3E"
-  },
-  {
-    name: "East African Portland Cement",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%230066cc' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='14' font-weight='bold' fill='white' text-anchor='middle'%3EEAPCC%3C/text%3E%3C/svg%3E"
-  },
-  {
-    name: "National Construction Authority",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%23006838' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='14' font-weight='bold' fill='white' text-anchor='middle'%3ENCA%3C/text%3E%3C/svg%3E"
-  },
-  {
-    name: "Kenya Power",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%23000080' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='22' font-family='Arial' font-size='12' font-weight='bold' fill='%23ffd700' text-anchor='middle'%3EKENYA%3C/text%3E%3Ctext x='60' y='33' font-family='Arial' font-size='10' fill='%23ffd700' text-anchor='middle'%3EPOWER%3C/text%3E%3C/svg%3E"
-  },
-  {
-    name: "Safaricom",
-    logoimg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Crect fill='%2300a550' width='120' height='40' rx='4'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='13' font-weight='bold' fill='white' text-anchor='middle'%3ESAFARICOM%3C/text%3E%3C/svg%3E"
-  },
+
+
+
 ];
 </script>
 
@@ -180,19 +140,6 @@ const logos = [
                       Most Popular
                     </v-chip>
                   </div>
-
-                  <!-- <div class="d-flex align-center ga-2">
-                    <div class="d-flex ga-4">
-                      <h3
-                        class="text-h3 font-weight-bold text-dark opacity-40 text-decoration-line-through"
-                        v-if="plan.strikeprice"
-                      >
-                        ${{ plan.strikeprice }}
-                      </h3>
-                      <h3 class="text-h3 font-weight-bold">${{ plan.price }}</h3>
-                    </div>
-                    <small class="text-dark opacity-70 text-subtitle-1">/project</small>
-                  </div> -->
                 </div>
               </div>
 
@@ -244,17 +191,17 @@ const logos = [
         <p class="text-center text-subtitle-1">
           Trusted by 80+ partners & clients across Kenya
         </p>
-        <div class="marquee d-flex mt-10">
-          <div class="marquee-content d-flex align-center ga-10 justify-center">
+        <div class="marquee-container mt-10">
+          <div class="marquee-content">
             <div
-              class="marquee-tag"
-              v-for="(item, index) in logos"
+              v-for="(item, index) in [...logos, ...logos]"
               :key="`${item.name}-${index}`"
+              class="marquee-item"
             >
               <img
                 :src="item.logoimg"
                 :alt="item.name"
-                style="height: 40px; width: auto; object-fit: contain;"
+                class="logo-image"
               />
             </div>
           </div>
@@ -264,3 +211,103 @@ const logos = [
     <SharedSectionSpacer />
   </div>
 </template>
+
+<style scoped>
+.pricing {
+  background: #fafafa;
+}
+
+/* Marquee Styles */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 3rem;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+.marquee-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(1.1) contrast(0.9);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.logo-image:hover {
+  opacity: 0.9;
+  filter: grayscale(50%) brightness(1.05) contrast(1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 1.5rem));
+  }
+}
+
+/* Pause animation on hover */
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .marquee-content {
+    gap: 2rem;
+    animation-duration: 25s;
+  }
+
+  .logo-image {
+    height: 35px;
+    max-width: 100px;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-content {
+    animation: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+  }
+}
+
+/* Interactive button styles */
+.interactive-button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.interactive-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.interactive-button .icon {
+  transition: transform 0.3s ease;
+}
+
+.interactive-button:hover .icon {
+  transform: translate(3px, -3px);
+}
+</style>
