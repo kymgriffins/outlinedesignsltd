@@ -59,7 +59,7 @@
   position: absolute;
   top: 35%;
   left: -80px;
-  
+
 }
 
 
@@ -390,29 +390,9 @@
     }
   }
 
-
-
-  h1.text-h1 {
-    font-size: 90px !important;
-    line-height: 1.2;
+  .container-lg {
+    padding: 0 20px;
   }
-
-  h2.text-h2 {
-    font-size: 40px !important;
-    line-height: 1.2;
-  }
-
-  h3.text-60 {
-    font-size: 48px !important;
-
-  }
-
-  h3.text-h3 {
-    font-size: 40px !important;
-    line-height: 1.2;
-
-  }
-
 
 }
 
@@ -437,6 +417,14 @@
 }
 
 @media screen and (max-width:767px) {
+  .hero-container {
+    height: 70vh;
+  }
+
+  .hero-content {
+    bottom: 20px;
+  }
+
   .brand-served {
     .first-ring {
       left: -4%;
@@ -456,27 +444,14 @@
     }
   }
 
-  h1.text-h1 {
-    font-size: 60px !important;
-    line-height: 1.2;
-  }
-
-  h2.text-h2 {
-    font-size: 36px !important;
-    line-height: 1.2;
-  }
-
-  h3.text-h3 {
-    font-size: 30px !important;
-    line-height: 1.2;
-
+  .container-lg {
+    padding: 0 15px;
   }
 
   .v-expansion-panel-title .text-h4 {
-    font-size: 20px !important;
-    line-height: 1.2;
+    font-size: 1.25rem !important;
+    line-height: 1.4;
     width: 100%;
-
   }
 
   .faq-panels .v-expansion-panel-title__icon {
@@ -484,18 +459,8 @@
   }
 
   .carousel__track {
-    gap: 30px;
-    padding: 0 15px;
-  }
-
-  h1.text-60 {
-    font-size: 40px !important;
-    line-height: 1.2;
-  }
-
-  h2.text-60 {
-    font-size: 40px !important;
-    line-height: 1.2;
+    gap: 20px;
+    padding: 0 10px;
   }
 
   .error-img {

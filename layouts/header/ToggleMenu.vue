@@ -51,7 +51,7 @@ const items: Item[] = [
         </v-avatar>
       </v-btn>
     </template>
-    <v-sheet rounded="lg" width="380" elevation="10" class="pa-6 mt-n12 bg-accent">
+    <v-sheet rounded="lg" width="300" max-width="90vw" elevation="10" class="pa-6 mt-n12 bg-accent">
       <div class="d-flex align-center justify-space-between border-b pb-4 ">
         <p class="text-subtitle-1 text-dark">Menu</p>
         <v-btn
@@ -65,7 +65,7 @@ const items: Item[] = [
       </div>
       <ul class="menu-list d-flex flex-column ga-2 py-4">
         <li v-for="(item, index) in items" :key="index">
-          <NuxtLink :to="item.url" class="text-dark font-weight-bold text-h5">
+          <NuxtLink :to="item.url" class="text-dark font-weight-bold text-h6">
             <span class="d-flex align-center">
               <img
                 :src="AnimatedIcon"
@@ -111,12 +111,12 @@ const items: Item[] = [
       <div class="d-flex flex-column pt-6">
         <a
           href="tel:+1-212-456-7890"
-          class="text-dark text-decoration-none opacity-50 hover-opacity-100 text-subtitle-2"
+          class="text-dark text-decoration-none opacity-50 hover-opacity-100 text-body-2"
           >+1-(574)-256-8811</a
         >
         <a
           href="mailto:info@wrappixel.com"
-          class="text-dark text-decoration-none text-h4"
+          class="text-dark text-decoration-none text-h5"
           >Weldon Kimutai</a
         >
       </div>
