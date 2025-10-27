@@ -16,25 +16,21 @@ const items = [
     name: "Kevin Yegon",
     role: "Architect",
     image: kevin,
-    focalPoint: "center 25%"
   },
   {
     name: "Bruce",
     role: "Structural Engineer",
     image: bruceImage,
-    focalPoint: "center 30%"
   },
   {
     name: "Judy",
     role: "Consultant",
     image: judy,
-    focalPoint: "center 20%"
   },
   {
     name: "Weldon",
     role: "CEO",
     image: weldon,
-    focalPoint: "center 25%"
   },
 ];
 
@@ -75,16 +71,15 @@ const handleImageError = (event: Event, itemName: string) => {
           class="team-member-col"
         >
           <div class="our-team lh-0 position-relative">
-            <img
-              :src="item.image"
-              :alt="item.name + ' photo'"
-              :style="{
-                objectPosition: item.focalPoint || 'center center'
-              }"
-              class="w-100 team-member-image"
-              loading="lazy"
-              @error="(e) => handleImageError(e, item.name)"
-            />
+            <div class="image-container">
+              <img
+                :src="item.image"
+                :alt="item.name + ' photo'"
+                class="team-member-image"
+                loading="lazy"
+                @error="(e) => handleImageError(e, item.name)"
+              />
+            </div>
             <div class="team-social d-flex ga-3 position-absolute">
               <v-avatar size="44" class="social-icon cursor-pointer">
                 <Icon icon="garden:twitter-stroke-12" height="18" class="text-secondary" />
@@ -99,8 +94,8 @@ const handleImageError = (event: Event, itemName: string) => {
             <div class="teambox"></div>
           </div>
           <div class="mt-5 team-info">
-            <h4 class="text-h4 team-name">{{ item.name }}</h4>
-            <p class="text-dark opacity-70 team-role">{{ item.role }}</p>
+            <h4 class="text-h4 team-name text-white">{{ item.name }}</h4>
+            <p class="text-white opacity-70 team-role">{{ item.role }}</p>
           </div>
         </v-col>
       </v-row>
@@ -114,18 +109,42 @@ const handleImageError = (event: Event, itemName: string) => {
   border-radius: 8px;
   overflow: hidden;
   position: relative;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Updated image container with white background */
+.image-container {
+  width: 100%;
+  height: clamp(300px, 40vw, 470px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  overflow: hidden;
+  padding: 16px;
 }
 
 .team-member-image {
-  height: clamp(300px, 40vw, 470px);
-  object-fit: cover;
-  width: 100%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   display: block;
-  transition: transform 0.3s ease;
+}
+
+/* Ensure full images are visible without cropping */
+.our-team:has(img[alt*="Kevin"]) .team-member-image,
+.our-team:has(img[alt*="Judy"]) .team-member-image,
+.our-team:has(img[alt*="Weldon"]) .team-member-image,
+.our-team:has(img[alt*="Bruce"]) .team-member-image {
+  object-fit: contain;
 }
 
 .our-team:hover .team-member-image {
-  transform: scale(1.05);
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
 }
 
 .team-social {
@@ -143,14 +162,16 @@ const handleImageError = (event: Event, itemName: string) => {
 }
 
 .social-icon {
-  background: rgba(255, 255, 255, 0.9) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
 .social-icon:hover {
   background: white !important;
   transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .teambox {
@@ -159,7 +180,7 @@ const handleImageError = (event: Event, itemName: string) => {
   left: 0;
   right: 0;
   height: 60%;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.2));
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -176,16 +197,23 @@ const handleImageError = (event: Event, itemName: string) => {
 .team-name {
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   margin-bottom: 0.5rem;
+  color: white;
 }
 
 .team-role {
   font-size: clamp(0.875rem, 1.5vw, 1rem);
+  color: white;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .team-member-col {
     margin-bottom: 2rem;
+  }
+
+  .image-container {
+    height: clamp(280px, 50vw, 400px);
+    padding: 12px;
   }
 
   .team-social {
@@ -200,8 +228,17 @@ const handleImageError = (event: Event, itemName: string) => {
 
 /* Tablet responsiveness */
 @media (max-width: 1024px) and (min-width: 769px) {
-  .team-member-image {
+  .image-container {
     height: clamp(280px, 35vw, 400px);
+    padding: 14px;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1440px) {
+  .image-container {
+    height: clamp(400px, 30vw, 500px);
+    padding: 20px;
   }
 }
 
@@ -213,5 +250,23 @@ const handleImageError = (event: Event, itemName: string) => {
 .container-lg {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Fallback for very small screens */
+@media (max-width: 480px) {
+  .image-container {
+    height: 250px;
+    padding: 8px;
+  }
+}
+
+/* Enhanced white background integration */
+.our-team {
+  transition: all 0.3s ease;
+}
+
+.our-team:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
 }
 </style>
