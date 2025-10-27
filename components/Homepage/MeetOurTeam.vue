@@ -8,6 +8,7 @@ import team1 from "/images/team/team-img-1.png";
 import team2 from "/images/team/team-img-2.png";
 import team3 from "/images/team/team-img-3.png";
 import team4 from "/images/team/team-img-4.png";
+const bruceImage = "https://i.pinimg.com/1200x/ab/59/00/ab590001e58933bdbd6ab0adbe25428c.jpg";
 
 const items = [
   {
@@ -18,7 +19,7 @@ const items = [
   {
     name: "Bruce",
     role: "Structural Engineer",
-    image: team1,
+    image: bruceImage,
   },
   {
     name: "Judy",
