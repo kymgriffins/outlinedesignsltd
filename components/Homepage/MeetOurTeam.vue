@@ -4,11 +4,11 @@ import { Icon } from "@iconify/vue";
 import weldon from "/images/team/weldon.png";
 import judy from "/images/team/Judychesire.jpg";
 import kevin from "/images/team/kevin.png";
-// Use the new images from Amos and Sarah as team photos
-const amosImage = "https://i.pinimg.com/736x/c0/f1/07/c0f1078ee071f05fc1b1832b838a3a64.jpg";
-const sarahImage = "https://i.pinimg.com/736x/eb/82/e6/eb82e6a177bce4034f1ec90e43f6077b.jpg";
-const rowellImage = "https://i.pinimg.com/1200x/ab/59/00/ab590001e58933bdbd6ab0adbe25428c.jpg";
-const weldonImage= "https://i.pinimg.com/736x/af/04/f4/af04f467aa6cabdab016a46aed5889ef.jpg";
+import team1 from "/images/team/team-img-1.png";
+import team2 from "/images/team/team-img-2.png";
+import team3 from "/images/team/team-img-3.png";
+import team4 from "/images/team/team-img-4.png";
+
 const items = [
   {
     name: "Kevin Yegon",
@@ -16,19 +16,19 @@ const items = [
     image: kevin,
   },
   {
-    name: "Bruce ",
+    name: "Bruce",
     role: "Structural Engineer",
-    image: rowellImage,
+    image: team1,
   },
   {
-    name: "Judy ",
+    name: "Judy",
     role: "Consultant",
     image: judy,
   },
   {
     name: "Weldon",
     role: "CEO",
-    image: weldon, // placeholder if you want to keep one original
+    image: weldon,
   },
 ];
 </script>
@@ -59,7 +59,8 @@ const items = [
               :src="item.image"
               :alt="item.name + ' photo'"
               class="w-100 obj-cover"
-              height="470"
+              style="height: clamp(300px, 40vw, 470px);"
+              loading="lazy"
             />
             <div class="team-social d-flex ga-3 position-absolute ">
               <v-avatar size="44" class="social-icon cursor-pointer">
