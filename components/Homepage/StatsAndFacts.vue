@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
-import { ref, onMounted } from "vue";
-import BgImage from "/images/background/bg-astrisk-icon.png";
+import { onMounted, ref } from "vue";
 import BgImageWhite from "/images/background/bg-astrisk-icon-white.png";
+import BgImage from "/images/background/bg-astrisk-icon.png";
 
 interface CounterItem {
   value: number;
