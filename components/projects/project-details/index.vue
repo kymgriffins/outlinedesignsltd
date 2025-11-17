@@ -5,6 +5,7 @@ import { onMounted, computed } from "vue";
 import { useRoute } from "vue-router";
 import { useProjectsGridStore } from "@/store/project";
 import AnimatedIcon from "/images/svgs/astrisk-icon.svg";
+import { motion } from "framer-motion";
 
 const formattedDescription = computed(() => {
   if (!post.value?.description) return "";
@@ -131,13 +132,40 @@ const post = computed(() => {
         <v-col cols="12" class="mt-lg-16 mt-8">
           <div class="project-details-grid">
             <!-- Project Images Gallery -->
-            <div v-if="post.project_images && post.project_images.length > 0" class="images-section mb-16">
-              <h2 class="text-40 text-dark font-weight-bold mb-8">Project Gallery</h2>
+            <motion.div
+              v-if="post.project_images && post.project_images.length > 0"
+              class="images-section mb-16"
+              initial={{ opacity: 0, y: 50 }}
+              while-in-view={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+            >
+              <motion.h2
+                class="text-40 text-dark font-weight-bold mb-8"
+                initial={{ opacity: 0, x: -30 }}
+                while-in-view={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
+                Project Gallery
+              </motion.h2>
               <div class="images-grid">
-                <div
+                <motion.div
                   v-for="(image, index) in post.project_images"
                   :key="index"
                   class="image-card"
+                  :initial="{ opacity: 0, y: 30, scale: 0.95 }"
+                  :while-in-view="{ opacity: 1, y: 0, scale: 1 }"
+                  :viewport="{ once: true }"
+                  :transition="{
+                    duration: 0.6,
+                    delay: index * 0.15,
+                    ease: [0.25, 0.46, 0.45, 0.94]
+                  }"
+                  :while-hover="{
+                    y: -8
+                  }"
+                  :while-tap="{ scale: 0.98 }"
                 >
                   <div class="image-card-inner">
                     <v-img
@@ -147,21 +175,55 @@ const post = computed(() => {
                       cover
                       height="300"
                     />
-                    <div class="image-overlay">
-                      <div class="image-number">
+                    <motion.div
+                      class="image-overlay"
+                      while-in-view={{ opacity: 1 }}
+                      transition={{ duration: 0.4, delay: 0.2 }}
+                    >
+                      <motion.div
+                        class="image-number"
+                        while-hover={{
+                          scale: 1.1,
+                          transition: { duration: 0.2 }
+                        }}
+                      >
                         {{ index + 1 }}
-                      </div>
-                    </div>
+                      </motion.div>
+                    </motion.div>
                   </div>
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
 
             <!-- Project Specifications -->
-            <div v-if="post.additional_details" class="specs-section mb-16">
+            <motion.div
+              v-if="post.additional_details"
+              class="specs-section mb-16"
+              initial={{ opacity: 0, y: 50 }}
+              while-in-view={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
+            >
+              <motion.h2
+                class="text-40 text-dark font-weight-bold mb-8"
+                initial={{ opacity: 0, x: -30 }}
+                while-in-view={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+              >
+                Project Specifications
+              </motion.h2>
               <div class="specs-grid">
                 <!-- Client & Timeline Card -->
-                <div class="spec-card">
+                <motion.div
+                  class="spec-card"
+                  while-hover={{ y: -4, scale: 1.02 }}
+                  while-tap={{ scale: 0.98 }}
+                  initial={{ opacity: 0, y: 30 }}
+                  while-in-view={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.8 }}
+                >
                   <div class="spec-card-header">
                     <h3 class="spec-title">Project Overview</h3>
                   </div>
@@ -179,10 +241,18 @@ const post = computed(() => {
                       <span class="spec-value">{{ post.additional_details.team_size }}</span>
                     </div>
                   </div>
-                </div>
+                </motion.div>
 
                 <!-- Technologies Card -->
-                <div class="spec-card">
+                <motion.div
+                  class="spec-card"
+                  while-hover={{ y: -4, scale: 1.02 }}
+                  while-tap={{ scale: 0.98 }}
+                  initial={{ opacity: 0, y: 30 }}
+                  while-in-view={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 1.0 }}
+                >
                   <div class="spec-card-header">
                     <h3 class="spec-title">Technologies</h3>
                   </div>
@@ -199,29 +269,51 @@ const post = computed(() => {
                       </v-chip>
                     </div>
                   </div>
-                </div>
+                </motion.div>
 
                 <!-- Challenge & Solution Card -->
-                <div class="spec-card">
+                <motion.div
+                  class="spec-card"
+                  while-hover={{ y: -4, scale: 1.02 }}
+                  while-tap={{ scale: 0.98 }}
+                  initial={{ opacity: 0, y: 30 }}
+                  while-in-view={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 1.2 }}
+                >
                   <div class="spec-card-header">
                     <h3 class="spec-title">Challenge</h3>
                   </div>
                   <div class="spec-card-content">
                     <p class="spec-text">{{ post.additional_details.challenge }}</p>
                   </div>
-                </div>
+                </motion.div>
 
-                <div class="spec-card">
+                <motion.div
+                  class="spec-card"
+                  while-hover={{ y: -4, scale: 1.02 }}
+                  while-tap={{ scale: 0.98 }}
+                  initial={{ opacity: 0, y: 30 }}
+                  while-in-view={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 1.4 }}
+                >
                   <div class="spec-card-header">
                     <h3 class="spec-title">Solution</h3>
                   </div>
                   <div class="spec-card-content">
                     <p class="spec-text">{{ post.additional_details.solution }}</p>
                   </div>
-                </div>
+                </motion.div>
 
                 <!-- Results Card -->
-                <div class="spec-card full-width">
+                <motion.div
+                  class="spec-card full-width"
+                  initial={{ opacity: 0, y: 30 }}
+                  while-in-view={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 1.6 }}
+                >
                   <div class="spec-card-header">
                     <h3 class="spec-title">Results</h3>
                   </div>
@@ -236,9 +328,9 @@ const post = computed(() => {
                       </li>
                     </ul>
                   </div>
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </v-col>
       </v-row>

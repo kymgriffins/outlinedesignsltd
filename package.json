@@ -17,6 +17,7 @@
     "axios-mock-adapter": "^2.1.0",
     "chance": "^1.1.13",
     "date-fns": "^4.1.0",
+    "framer-motion": "^12.23.24",
     "lodash": "^4.17.21",
     "nuxt": "^3.17.5",
     "pinia": "^3.0.3",

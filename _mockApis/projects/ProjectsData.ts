@@ -21,134 +21,134 @@ const chance = new Chance();
 const ProjectGridData: ProjectsTypesExtended[] = [
   {
     id: chance.integer({ min: 1, max: 2000 }),
-    project_title: "Architectural Visualization: Design Excellence Showcase",
+    project_title: "Prime Waterfront Villa - Westlands",
     project_image: "/images/projects/real/001.png",
-    tag1: "Architectural Visualization",
-    tag2: "3D Rendering",
-    industry: "Architecture & Design",
-    raised: "2.8M",
+    tag1: "Luxury Residential",
+    tag2: "Modern Architecture",
+    industry: "High-End Real Estate",
+    raised: "5.8M",
     project_images: ["/images/projects/real/001.png", "/images/projects/real/001 (1).png", "/images/projects/real/005.png"],
     description: `
-    <p>Transforming architectural concepts into stunning visual masterpieces through cutting-edge 3D visualization techniques. This project showcases our ability to bring complex design ideas to life with photorealistic detail and artistic precision.</p>
+    <p>Exclusive waterfront villa development featuring panoramic views and uncompromising luxury finishes. This premium property showcases architectural excellence with bespoke interiors and cutting-edge smart home integration.</p>
     <ul>
-      <li><strong>Advanced Rendering:</strong> Utilizing state-of-the-art rendering engines for lifelike lighting, materials, and textures</li>
-      <li><strong>Design Accuracy:</strong> Meticulously translating architectural plans into immersive visual experiences</li>
-      <li><strong>Client Presentation:</strong> Creating compelling visuals that effectively communicate design vision to stakeholders</li>
-      <li><strong>Technical Excellence:</strong> Combining artistic vision with technical precision for unparalleled results</li>
-      <li><strong>Innovation Focus:</strong> Exploring new techniques in architectural visualization and presentation</li>
+      <li><strong>Prime Location:</strong> 0.8-acre waterfront plot with 180-degree lake views</li>
+      <li><strong>Build Quality:</strong> Premium imported marble, custom millwork, and state-of-the-art systems</li>
+      <li><strong>Luxury Amenities:</strong> Infinity pool, wine cellar, home theater, and sports pavilion</li>
+      <li><strong>Smart Integration:</strong> Full automation with climate control, security, and entertainment systems</li>
+      <li><strong>Green Features:</strong> Solar panels, rainwater harvesting, and native landscaping</li>
     </ul>
-    <p>Each frame tells a story of architectural brilliance, transforming cold blueprints into warm, inviting spaces that inspire and captivate.</p>
+    <p>This villa represents the pinnacle of luxury living, combining architectural sophistication with unparalleled lifestyle amenities.</p>
   `,
     detail_img_1: "/images/projects/real/001.png",
     detail_img_2: "/images/projects/real/001 (1).png",
     detail_img_3: "/images/projects/real/005.png",
     additional_details: {
-      client: "Premium Realty Group",
-      duration: "8 months",
-      team_size: "5 members",
-      technologies: ["3ds Max", "V-Ray", "Photoshop", "After Effects"],
-      challenge: "Create photorealistic visualizations that capture the essence of contemporary design while maintaining technical accuracy",
-      solution: "Implemented advanced rendering techniques with custom material shaders and dynamic lighting studies",
-      results: ["94% client satisfaction", "Used in 12 marketing campaigns", "Won Best Visualization Award 2024"]
+      client: "Exclusive Properties Ltd",
+      duration: "15 months",
+      team_size: "18 members",
+      technologies: ["Revit Architecture", "Autodesk BIM", "Sustainable Design Software", "Smart Home Integration"],
+      challenge: "Design and construct a waterfront villa that maximizes lake views while incorporating sustainable features and luxury amenities within budget constraints",
+      solution: "Implemented floor-to-ceiling glazing with automated shading systems, integrated passive solar design, and utilized local materials for cost efficiency",
+      results: ["Sold for 45% above appraisal", "LEED Gold certified", "Featured in Architectural Digest", "Won Luxury Design Award 2024"]
     }
   },
   {
     id: chance.integer({ min: 1, max: 2000 }),
-    project_title: "Luxury Kitchen Design & Interior Excellence",
+    project_title: "Mixed-Use Development - Riverside Complex",
     project_image: "/images/projects/real/002.png",
-    tag1: "Interior Design",
-    tag2: "Luxury Kitchens",
-    industry: "Residential Architecture",
-    raised: "3.2M",
+    tag1: "Commercial Residential",
+    tag2: "Urban Development",
+    industry: "Mixed-Use Real Estate",
+    raised: "12.5M",
     project_images: ["/images/projects/real/002.png", "/images/projects/real/002 (1).png"],
     description: `
-    <p>Creating extraordinary culinary spaces that seamlessly blend functionality, aesthetics, and luxury. Our kitchen designs go beyond mere cooking spaces—they become the heart of the modern home experience.</p>
+    <p>Comprehensive mixed-use development combining premium retail spaces, luxury condominiums, and commercial offices in the heart of the city. This project revitalizes urban spaces while creating vibrant community hubs.</p>
     <ul>
-      <li><strong>Premium Materials:</strong> Selection of finest quality cabinetry, countertops, and finishes</li>
-      <li><strong>Ergonomic Design:</strong> Expert layout planning for optimal workflow and user comfort</li>
-      <li><strong>Lighting Innovation:</strong> Strategic lighting design that enhances both function and ambiance</li>
-      <li><strong>Storage Solutions:</strong> Intelligent organization systems for maximum efficiency and style</li>
-      <li><strong>Custom Integration:</strong> Seamless incorporation of high-end appliances and smart technology</li>
+      <li><strong>Premium Retail:</strong> Ground-floor boutique shops and flagship stores with modern facades</li>
+      <li><strong>Luxury Condos:</strong> 120 high-end residential units with panoramic city views</li>
+      <li><strong>Office Spaces:</strong> Grade-A commercial offices with flexible floor plans</li>
+      <li><strong>Public Spaces:</strong> Rooftop gardens, plazas, and pedestrian-friendly walkways</li>
+      <li><strong>Access & Transit:</strong> Direct access to metro, ample parking, and EV charging stations</li>
     </ul>
-    <p>Where culinary art meets architectural elegance, creating spaces that inspire cooking creativity and social gatherings.</p>
+    <p>A catalyst for urban regeneration, combining commercial viability with residential luxury and community enhancement.</p>
   `,
     detail_img_1: "/images/projects/real/002.png",
     detail_img_2: "/images/projects/real/002 (1).png",
     detail_img_3: "",
     additional_details: {
-      client: "Elite Homes Collection",
-      duration: "6 months",
-      team_size: "4 members",
-      technologies: ["AutoCAD", "SketchUp", "V-Ray", "Kitchen Design Software"],
-      challenge: "Design a kitchen that maximizes functionality while maintaining elegant aesthetics for a high-profile client",
-      solution: "Created intelligent zoning with separate prep, cooking, and dining areas, integrated smart appliances",
-      results: ["Featured in Interior Design Magazine", "100% functionality score", "Client ROI within first year"]
+      client: "Urban Development Corporation",
+      duration: "28 months",
+      team_size: "35 members",
+      technologies: ["Urban Planning Software", "Traffic Modeling", "BIM Coordination", "Environmental Impact Analysis"],
+      challenge: "Transform underutilized industrial site into vibrant mixed-use development while maximizing floor area ratios and ensuring pedestrian connectivity",
+      solution: "Strategic massing studies optimized solar access, phased construction minimized disruption, and integrated public transit enhanced accessibility",
+      results: ["100% occupancy within 6 months", "$2.1M above pro forma NOI", "Urban Design Excellence Award", "98% tenant satisfaction"]
     }
   },
   {
     id: chance.integer({ min: 1, max: 2000 }),
-    project_title: "Contemporary Modern Estate Architecture",
+    project_title: "Executive Townhouses - Karen Ridge",
     project_image: "/images/projects/real/003.png",
-    tag1: "Modern Architecture",
-    tag2: "Residential Estates",
-    industry: "Luxury Real Estate",
-    raised: "7.4M",
+    tag1: "Premium Townhouses",
+    tag2: "Gated Community",
+    industry: "Residential Real Estate",
+    raised: "8.9M",
     project_images: ["/images/projects/real/003.png", "/images/projects/real/003 (1).png"],
     description: `
-    <p>Crafting exceptional modern residences that harmonize with their natural surroundings while embodying architectural innovation and sophistication. Each estate represents the pinnacle of contemporary design philosophy.</p>
+    <p>Sophisticated townhouse development in prime suburban location featuring timeless architectural design and exclusive amenities. This community offers the perfect blend of privacy, convenience, and luxury living.</p>
     <ul>
-      <li><strong>Contextual Integration:</strong> Designs that respect and enhance the natural landscape</li>
-      <li><strong>Sustainable Innovation:</strong> Incorporating green building principles and energy-efficient technologies</li>
-      <li><strong>Volumetric Mastery:</strong> Strategic use of massing, voids, and light to create dynamic spaces</li>
-      <li><strong>Material Excellence:</strong> Premium selection of sustainable, durable, and beautiful materials</li>
-      <li><strong>Lifestyle Oriented:</strong> Spaces designed around how people actually live and interact</li>
+      <li><strong>Architectural Design:</strong> Classic yet contemporary facades with premium materials and finishes</li>
+      <li><strong>Unit Mix:</strong> 3-4 bedroom townhouses ranging from 3,200-4,800 sq ft</li>
+      <li><strong>Community Amenities:</strong> Clubhouse, fitness center, swimming pool, and landscaped gardens</li>
+      <li><strong>Location Benefits:</strong> Proximity to schools, shopping, and major highways</li>
+      <li><strong>Security Features:</strong> 24/7 manned security, perimeter fencing, and smart access systems</li>
     </ul>
-    <p>Where architecture becomes more than shelter—it becomes an extension of the soul, harmonizing modern living with timeless elegance.</p>
+    <p>Crafted for discerning homeowners who demand excellence in design, location, and lifestyle amenities.</p>
   `,
     detail_img_1: "/images/projects/real/003.png",
     detail_img_2: "/images/projects/real/003 (1).png",
     detail_img_3: "",
     additional_details: {
-      client: "Private Estate Developer",
-      duration: "18 months",
-      team_size: "12 members",
-      technologies: ["Revit", "Rhino", "Grasshopper", "Energy Modeling Software"],
-      challenge: "Create a modern estate that achieves LEED Platinum certification while satisfying luxury lifestyle requirements",
-      solution: "Integrated passive solar design, rain water harvesting, and high-performance glazing systems",
-      results: ["LEED Platinum certified", "35% energy savings", "Architectural Digest featured", "$2M above appraisal value"]
+      client: "Premium Homes Developer",
+      duration: "20 months",
+      team_size: "22 members",
+      technologies: ["Residential BIM", "Energy Modeling", "Landscape Architecture Software", "Cost Estimation Tools"],
+      challenge: "Develop high-quality townhouse community in competitive suburban market while achieving profitable margins and maintaining design excellence",
+      solution: "Optimized unit layouts for privacy and views, selected quality materials within budget, and implemented efficient construction sequencing",
+      results: ["Sold out in 3 months", "15% above market pricing", "Community of the Year Award", "93% buyer satisfaction"]
     }
   },
   {
     id: chance.integer({ min: 1, max: 2000 }),
-    project_title: "Institutional Facade Design Innovation",
+    project_title: "Corporate Headquarters - Business Park",
     project_image: "/images/projects/real/004.png",
-    tag1: "Facade Design",
-    tag2: "Institutional Architecture",
-    industry: "Public Architecture",
-    raised: "9.6M",
+    tag1: "Commercial Architecture",
+    tag2: "Corporate Campus",
+    industry: "Commercial Real Estate",
+    raised: "18.2M",
     project_images: ["/images/projects/real/004.png", "/images/projects/real/004 (1).png"],
     description: `
-    <p>Revolutionizing building envelopes through parametric design and advanced material technology. Our facade innovations balance structural integrity, aesthetic appeal, and environmental performance in groundbreaking ways.</p>
+    <p>State-of-the-art corporate headquarters designed to foster innovation, collaboration, and employee well-being. This workspace redefines modern office environments with sustainable design and technological integration.</p>
     <ul>
-      <li><strong>Parametric Design:</strong> Algorithm-driven design processes for complex geometric solutions</li>
-      <li><strong>Material Innovation:</strong> Advanced composites and sustainable cladding systems</li>
-      <li><strong>Performance Optimization:</strong> Balancing thermal, acoustic, and aesthetic requirements</li>
-      <li><strong>Manufacturing Excellence:</strong> Leveraging CNC precision and digital fabrication techniques</li>
-      <li><strong>Longevity Focus:</strong> Systems designed for durability, maintainability, and future adaptability</li>
+      <li><strong>Modern Workspaces:</strong> Flexible floor plans with open collaboration areas and quiet focus zones</li>
+      <li><strong>Employee Amenities:</strong> On-site fitness center, café, and wellness spaces</li>
+      <li><strong>Technology Integration:</strong> High-speed connectivity, smart building systems, and AV integration</li>
+      <li><strong>Sustainability:</strong> Green building certification, energy-efficient systems, and natural lighting</li>
+      <li><strong>Scalability:</strong> Designed for growth with modular construction and expansion capabilities</li>
     </ul>
-    <p>Pushing the boundaries of what's possible in building skin design, creating facades that are as functional as they are beautiful.</p>
+    <p>An architectural statement that reflects corporate values while providing an inspiring environment for innovation and growth.</p>
   `,
     detail_img_1: "/images/projects/real/004.png",
     detail_img_2: "/images/projects/real/004 (1).png",
     detail_img_3: "",
     additional_details: {
-      client: "National Cultural Institute",
-      duration: "24 months",
-      team_size: "15 members",
-      technologies: ["Rhino + Grasshopper", "Revit", "Tekla Structures", "CNC Programming"],
-      challenge: "Redesign aging facade to meet modern performance standards while preserving architectural heritage",
-      solution: "Developed parametric facade system that adapts to thermal loads and reduces solar gain by 60%",
-      results: ["60% energy reduction", "Winner of Façade Innovation Prize", "Extended building lifespan by 50 years"]
+      client: "TechVision Solutions Ltd",
+      duration: "22 months",
+      team_size: "28 members",
+      technologies: ["Commercial BIM", "HVAC Modeling", "Lighting Design Software", "Acoustic Analysis Tools"],
+      challenge: "Create workplace that boosts productivity and employee retention while achieving cost-effective construction in competitive commercial market",
+      solution: "Implemented biophilic design principles, optimized spatial efficiency, and integrated smart building systems for operational efficiency",
+      results: ["25% increase in employee satisfaction", "BREEAM Excellent certified", "Corporate Design Innovation Award", "$500K annual energy savings"]
     }
   },
 
